@@ -8,8 +8,9 @@ Blue 			#30BCED
 
 
 * {-webkit-font-smoothing: antialiased;}
+:focus {background-color: yellow;}
 
-body {margin: 0; padding: 0; background-color: #FFF; color: #303036; font-size: 100%; font-family: 'Raleway', sans-serif;}
+body {margin: 0; padding: 0; background-color: #FFF; color: #303036; font-size: 100%; font-family: 'Raleway', 'Helvetica', sans-serif;}
 
 a {color: #0D0D0D;}
 a:hover {color: #F00D2E;}
@@ -50,8 +51,11 @@ nav a:hover {color: #F00D2E;}
 .container p {padding-bottom: 2rem; line-height: 2rem;}
 .background-img {margin: 0 auto 2rem auto; background: no-repeat fixed center; background-size: cover; height: 150px; width: 100%; max-width: 960px;}
 .bg-1 {background-image: url(img/bg-red.jpg);}
-.next-page {height: 200px; width: 100%; background-color: #F00D2E; color: #FFFAFF;}
-.next-page h2 {color: #FFFAFF; padding-top: 60px; }
+.next-page {margin-top: 2rem; height: 200px; width: 100%; background-color: #F00D2E; color: #FFFAFF;}
+.next-page h2 {padding: 0; color: #FFFAFF;}
+.next-page p {text-align: center; padding: 2.5rem 0 0.5rem 0;}
+
+
 
 /* Portfolio Page */
 
@@ -65,14 +69,14 @@ h3, .port-web-text p {margin: 16px 16px 16px 16px; padding: 0;}
 
 .center-button {text-align: center;}
 .download {margin-bottom: 2rem; padding: 16px; display: inline-block; background-color: #F00D2E; color: #FFFAFF; font-size: 0.8rem; box-shadow: 1px 1px 1px rgba(13,13,13,0.2);}
-.download:hover {background-color: #D20D2E; color: #FFFAFF; cursor: pointer;}
+.download:hover, .next-page:hover {background-color: #D20D2E; cursor: pointer;}
 
 .cvcontainer p {padding-bottom: 0;}
 .cvcontainer {padding-bottom: 0.5rem;}
 
 /* Footer */
 
-footer {margin-top: 2rem; width: 100%; background-color: #303036;}
+footer {width: 100%; background-color: #303036;}
 footer, footer a {color: #FFF;}
 footer ul {margin: 0; padding: 0 0 2rem 16px; list-style-type: none;}
 footer .container p {padding-bottom: 1rem; line-height: 1.2rem;}
