@@ -9,12 +9,12 @@ Blue 	#30BCED
 
 :focus {background-color: yellow;}
 
-body {margin: 0; padding: 0; background-color: #FFF; color: #303036; font-size: 100%; font-family: 'Raleway', 'Helvetica', sans-serif;}
+body {margin: 0; padding: 0; background-color: #FFF; color: #303036; font-size: 100%; font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif; font-weight: 400;}
 
 a {color: #0D0D0D; text-decoration: none; border-bottom: 2px solid #303036;}
 a:hover, a:active {color: #F00D2E; background-color: #FFF; border-color: #F00D2E;}
 h1 {margin-bottom: 3.3rem; padding: 0 12px; font-size: 2.3rem; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0px 1px rgba(13,13,13,0.4);}
-h2 {padding-bottom: 1.5rem; font-size: 2rem; font-weight: 500; text-align: center; color: #F00D2E; }
+h2, h4 {padding-bottom: 1.5rem; font-size: 2rem; font-weight: 500; text-align: center; color: #F00D2E;}
 
 header {height: 100vh; display: grid; grid-template-columns: 20% 20% 20% 20% 20%; grid-template-rows: 20% 20% 20% 20% 20%; border-bottom: 1px solid rgba(13,13,13,0.1); background-color: #FFF;}
 header section {align-self: center; grid-column: 1/6; grid-row: 2/4; text-align: center;}
@@ -49,19 +49,19 @@ nav a:hover, nav a:active {color: #F00D2E; background-color: #FFF;}
 
 /* Main */
 
-.twitter-logo, .instagram-logo, .linkedin-logo {width: 36px; height: auto;}
-.twitter-logo-outer {fill: none;}
-.twitter-logo-fill, .instagram-logo-fill, .linkedin-logo-fill {fill: #FFF; transition: fill 330ms ease-in-out;}
-.twitter-logo:hover .twitter-logo-fill, .instagram-logo:hover .instagram-logo-fill, .linkedin-logo:hover .linkedin-logo-fill {fill: #F00D2E;}
+.social-icon {width: 38px; height: auto;}
+.social-icon-outer {fill: #212121; transition: fill 220ms;}
+.social-icon-fill {fill: #FFF;}
+.social-icon:hover .social-icon-outer {fill: #424242; transition: fill 220ms;}
 
 .container {margin: 0 auto; padding: 12px 16px; max-width: 760px;}
 .container p {padding-bottom: 2rem; line-height: 2rem;}
 .background-img {margin: 0 auto 2rem auto; background: no-repeat fixed center center; background-size: cover; height: 150px; width: 100%; max-width: 960px;}
 .bg-1 {background-image: url(img/bg-red.jpg);}
-.next-page {margin-top: 2rem; height: 200px; width: 100%; color: #FFF;}
-.next-page h2 {padding: 0; color: #FFFAFF;}
+.next-page {margin-top: 2rem; display: block; background-color: #F00D2E; height: 200px; width: 100%; color: #FFF; border: none;}
+.next-page:hover {background-color: }
+.next-page h4 {padding: 0; color: #FFF;}
 .next-page p {text-align: center; padding: 2.5rem 0 0.5rem 0; font-style: italic; color: #FFF;}
-.next-page a {height: 100%; width: 100%; display: block; background-color: #F00D2E;}
 
 form {text-align: center;}
 label, input, button, textarea {width: 75%; max-width: 600px; display: block; font-family: "Raleway", sans-serif;}
@@ -74,7 +74,7 @@ button:hover, button:active {background-color: #D20D2E; cursor: pointer;}
 
 /* Portfolio Page */
 
-.port-web {margin-bottom: 2rem; height: 400px; width: 100%; position: relative; background: no-repeat center; background-size: cover; display: block; border: none;}
+.port-web {margin-bottom: 5rem; height: 400px; width: 100%; position: relative; background: no-repeat center; background-size: cover; display: block; border: none;}
 .port-web:hover {border: none;}
 .port-web:hover .port-web-text, .port-web:active .port-web-text {background-color: rgba(240,13,46,0.9); transition: background-color 220ms ease-in-out;}
 .port-web-text {margin: 0; padding: 16px 0; width: 100%; color: #FFF; background-color: rgba(1,1,1,0.9); position: absolute; bottom: 0;transition: background-color 220ms ease-in-out;}
@@ -87,14 +87,14 @@ h3, .port-web-text p {margin: 16px 16px 16px 16px; padding: 0;}
 
 .center-button {text-align: center;}
 .download {margin-bottom: 2rem; padding: 16px; display: inline-block; background-color: #F00D2E; color: #FFFAFF; font-size: 0.8rem; box-shadow: 1px 1px 1px rgba(13,13,13,0.2);}
-.download:hover, .next-page a:hover {background-color: #D20D2E; cursor: pointer; color: #FFF; border-color: #303036;}
+.download:hover, .next-page:hover {background-color: #D20D2E; cursor: pointer; color: #FFF; border-color: #303036;}
 
 .cvcontainer p {padding-bottom: 0;}
 .cvcontainer {padding-bottom: 0.5rem;}
 
 /* Footer */
 
-footer {width: 100%; background-color: #303036;}
+footer {padding: 1rem 0 2.2rem 0; width: 100%; background-color: #303036;}
 footer, footer a {color: #FFF; border-color: #FFF;}
 footer a:hover, footer a:active {background-color: #303036;}
 footer ul {margin: 0; padding: 0 0 2rem 16px; list-style-type: none;}
@@ -107,10 +107,9 @@ footer .container {max-width: 640px;}
 
 @media (min-width: 768px) {
 main {padding-top: 3rem;}
-header {background: linear-gradient(30deg, #FFF 80%, #F00D2E 20%)}
 .background-img {margin: 3rem auto; height: 250px}
 .handle {display: none;}
-nav ul {padding: 0; height: auto; opacity: 1; display: block; height: auto; position: relative; box-shadow: 2px 2px 2px rgba(13,13,13,0.3)}
+nav ul {padding: 0; height: auto; opacity: 1; display: block; height: auto; position: relative; box-shadow: 2px 2px 2px rgba(13,13,13,0.3);}
 nav li {display: inline-block;}
 nav a {margin: 0 10px; padding: 20px 0; width: 160px; text-align: center; text-indent: 0;}
 nav a:hover {color: #303036; border-bottom: 2px solid #F00D2E;}
