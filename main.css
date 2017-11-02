@@ -75,7 +75,7 @@ button:hover, button:active {background-color: #D20D2E; cursor: pointer;}
 /* Portfolio Page */
 
 .port-web {margin-bottom: 5rem; height: 400px; width: 100%; position: relative; background: no-repeat center; background-size: cover; display: block; border: none;}
-.port-web:hover {border: none;}
+.port-web:hover {border: none; transform: scale(1.2);}
 .port-web:hover .port-web-text, .port-web:active .port-web-text {background-color: rgba(240,13,46,0.9); transition: background-color 220ms ease-in-out;}
 .port-web-text {margin: 0; padding: 16px 0; width: 100%; color: #FFF; background-color: rgba(1,1,1,0.9); position: absolute; bottom: 0;transition: background-color 220ms ease-in-out;}
 .bg-student-survival-guide {background-image: url(img/ssg.jpg);}
@@ -116,7 +116,7 @@ nav a:hover {color: #303036; border-bottom: 2px solid #F00D2E;}
 .active {color: #303036; border-bottom: 2px solid #F00D2E;}
 .nav-ghost {margin: 24px 16px; display: inline-block;}
 .download {padding: 16px 22px; font-size: 1rem; box-shadow: 2px 2px 2px rgba(13,13,13,.2);}
-footer {padding: 2.5rem 0;}
+footer {padding: 2.5rem 0 3.7rem 0;}
 label {font-size: 1.2rem;}
 input, textarea, button {margin: 1rem auto 2rem auto; font-size: 1rem;}
 }
