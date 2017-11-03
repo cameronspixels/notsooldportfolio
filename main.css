@@ -18,6 +18,7 @@ h2, h4 {padding-bottom: 1.5rem; font-size: 2rem; font-weight: 500; text-align: c
 
 header {height: 100vh; display: grid; grid-template-columns: 20% 20% 20% 20% 20%; grid-template-rows: 20% 20% 20% 20% 20%; border-bottom: 1px solid rgba(13,13,13,0.1); background-color: #FFF;}
 header section {align-self: center; grid-column: 1/6; grid-row: 2/4; text-align: center;}
+header .download {width: 200px;}
 
 .fade {animation-name: fade-title-in; opacity: 1; animation-iteration-count: 1; animation-duration: 330ms; animation-timing-function: ease-in;}
 .fade h1, .fade p {animation-name: drop-in; animation-iteration-count: 1; animation-duration: 110ms;}
@@ -75,7 +76,7 @@ button:hover, button:active {background-color: #D20D2E; cursor: pointer;}
 /* Portfolio Page */
 
 .port-web {margin-bottom: 5rem; height: 400px; width: 100%; position: relative; background: no-repeat center; background-size: cover; display: block; border: none;}
-.port-web:hover {border: none; transform: scale(1.2);}
+.port-web:hover {border: none;}
 .port-web:hover .port-web-text, .port-web:active .port-web-text {background-color: rgba(240,13,46,0.9); transition: background-color 220ms ease-in-out;}
 .port-web-text {margin: 0; padding: 16px 0; width: 100%; color: #FFF; background-color: rgba(1,1,1,0.9); position: absolute; bottom: 0;transition: background-color 220ms ease-in-out;}
 .bg-student-survival-guide {background-image: url(img/ssg.jpg);}
