@@ -1,0 +1,175 @@
+$red: #F00D2E;
+$white: #FFF;
+$grey: #303036;
+$black: #0D0D0D;
+
+$fonts: Raleway, Helvetica, Arial, sans-serif;
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $white;
+	color: $grey;
+	font: 100% $fonts;
+	font-weight: 400;
+}
+
+header {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+	background-color: $white;
+	border-bottom: 1px solid rgba(13,13,13,0.1);
+	section {
+		grid-column: 1/6;
+		grid-row: 2/4;
+		align-self: center;
+		text-align: center;
+	}
+	.download {
+		width: 200px;
+	}
+}
+
+a {color: #0D0D0D;
+	text-decoration: none;
+	border-bottom: 2px solid #303036;
+	:hover, :active {
+		background-color: $white;
+		color: $red;
+		border-color: $red;
+	}
+}
+
+h1 {
+	margin-bottom: 3.3rem;
+	padding: 0 12px;
+	font-size: 2.3rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: 0px 1px rgba(13,13,13,0.4);
+}
+
+h2, h4 {
+	padding-bottom: 1.5rem;
+	font-size: 2rem; font-weight: 500;
+	text-align: center;
+	color: #F00D2E;
+}
+
+@keyframes fade-title-in {
+	0% {
+	opacity: 0;
+	}
+	100% {
+	opacity: 1;
+	}
+}
+
+@keyframes drop-in {
+	0% {
+	margin-top: -2px;
+	}
+	100% {
+	margin-top: 0px;
+	}
+}
+
+.fade {
+	opacity: 1;
+	animation-name: fade-title-in;
+	animation-iteration-count: 1;
+	animation-duration: 330ms;
+	animation-timing-function: ease-in;
+	h1, p {
+		animation-name: drop-in;
+		animation-iteration-count: 1;
+		animation-duration: 110ms;}
+}
+
+.arrow {
+	grid-row: 5/6;
+	grid-column: 3/4;
+	justify-self: center;
+	border: none;
+	transition: margin-top 220ms ease-out;
+	:hover {
+		margin-top: 20px;
+		cursor: pointer; 
+		transition: margin-top 220ms ease-out;
+	}
+	img {
+		padding: 16px;
+		height: 48px;
+	}
+}
+
+nav {
+	grid-row: 1/6;
+	grid-column: 1/6;
+	ul {
+		margin: 0;
+		padding: 33% 0 0 0;
+		height: 0;
+		width: 100%;
+		z-index: 2;
+		position: fixed;
+		opacity: 0; 
+		background-color: $white;
+		font-weight: 500;
+		list-style-type: none;
+		overflow: hidden;
+		transition: opacity 220ms ease-out;
+	}
+	a {
+		padding: 32px 0px;
+		width: 100%;
+		display: block;
+		text-indent: 64px;
+		border: none;
+		text-decoration: none;
+		:hover, :active {
+		background-color: $white;	
+		color: $red;
+		}
+	}
+}
+
+.active {
+	color: $red;
+}
+
+.handle {
+	padding: 20px 20px;
+	width: calc(100% - 40px);
+	z-index: 3;
+	background-color: $white;
+	color: $grey; 
+	text-align: right;
+	:hover {
+		cursor: pointer;
+	}
+	:before {
+		content: 'Menu';
+	}
+}
+
+.handle--close {
+	display: none;
+}
+
+#openMenu:target {
+	ul {
+	height: 100vh;
+	opacity: 1;
+	}
+	.handle--open {
+		display: none;
+	}
+	.handle--close {
+		display: inline-block;
+		position: fixed;
+		color: $red;
+	}
+}

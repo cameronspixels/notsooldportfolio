@@ -106,7 +106,7 @@ footer .container {max-width: 640px;}
 .footer-social {padding: 0 0 16px 16px;}
 .footer-social li {display: inline-block;}
 
-@media (min-width: 768px) {
+@media (min-width: 664px) {
 main {padding-top: 3rem;}
 .background-img {margin: 3rem auto; height: 250px}
 .handle {display: none;}
