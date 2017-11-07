@@ -7,7 +7,7 @@ Blue 	#30BCED
 */
 
 
-:focus {background-color: yellow;}
+:focus {background-color: #FFBF47;}
 
 body {margin: 0; padding: 0; background-color: #FFF; color: #303036; font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif; font-size: 100%; font-weight: 400;}
 
@@ -73,12 +73,13 @@ nav a:hover, nav a:active {color: #F00D2E; background-color: #FFF;}
 
 form {text-align: center;}
 label, input, button, textarea {width: 75%; max-width: 600px; display: block; font-family: "Raleway", sans-serif;}
-label {margin: 0 auto 1.5rem auto;}
-input, textarea, button {margin: 0.5rem auto 2rem auto; font-size: 0.8rem;}
+label {margin: 0 auto 1.2rem auto;}
+input, textarea, button {margin: 0.5rem auto 2.5rem auto; font-size: 0.8rem;}
 input, textarea {padding: 0.5rem; border: 1px solid #0D0D0D;}
-input:focus, textarea:focus {background-color: #FFF; border-color: #F00D2E;}
+input:focus, textarea:focus {background-color: #FFF; outline: 3px solid #FFBF47;}
 button {padding: 16px 32px; width: auto; background-color: #F00D2E; color: #FFF; border: none; border-bottom: 2px solid #303036;}
 button:hover, button:active {background-color: #D20D2E; cursor: pointer;}
+.label-hint p {margin: 0 0 1.3rem 0; font-size: 0.8rem; text-align: center; line-height: 1rem; padding: 0; color: #BDBDBD;}
 
 /* Portfolio Page */
 
@@ -86,7 +87,7 @@ button:hover, button:active {background-color: #D20D2E; cursor: pointer;}
 .port-web:hover {border: none;}
 .port-web:hover .port-web-text, .port-web:active .port-web-text {background-color: rgba(240,13,46,0.9); transition: background-color 220ms ease-in-out;}
 .port-web-text {margin: 0; padding: 16px 0; width: 100%; position: absolute; bottom: 0; background-color: rgba(1,1,1,0.9); color: #FFF; transition: background-color 220ms ease-in-out;}
-.bg-student-survival-guide {background-image: url(img/ssg.jpg);}
+.bg-student-survival-guide {background-image: url(img/ssg-default.jpg);}
 h4 {margin-bottom: 16px; font-size: 1.2rem; font-weight: 400;}
 h4, .port-web-text p {margin: 16px 16px 16px 16px; padding: 0;}
 .port-web-text p {line-height: 1.6rem;}

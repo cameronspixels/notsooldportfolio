@@ -69,13 +69,25 @@
             <input type="hidden" name="_format" value="plain">
             <input type="hidden" name="_next" value="index.html">
             <label>Name</label>
-            <input type="text" name="name" placeholder="Your name">
+            <span class="label-hint">
+              <p>Your full name, your first name... anything that lets me know who you are!</p>
+            </span>
+            <input type="text" name="name">
             <label>Email</label>
-            <input type="text" name="_replyto" placeholder="Your email">
+            <span class="label-hint">
+              <p>The email address that you'd like me to reply to.</p>
+            </span>
+            <input type="text" name="_replyto">
             <label>Subject</label>
-            <input type="text" name="_subject" placeholder="Contact subject">
+            <span class="label-hint">
+              <p>What you're getting in touch about.</p>
+            </span>            
+            <input type="text" name="_subject">
             <label>Your Message</label>
-            <textarea name="message" placeholder="Contact message"></textarea>
+            <span class="label-hint">
+              <p>The message you want to send.</p>
+            </span>            
+            <textarea name="message"></textarea>
             <button type="submit">Send</button>
             <p>You'll be directed to <a href="http://www.formspree.io/" title="Formspree homepage">formspree.io</a>, just to confirm that you aren't spamming! You will automatically return here after confirmation.</p>
           </form>
