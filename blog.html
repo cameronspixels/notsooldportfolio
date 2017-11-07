@@ -7,7 +7,6 @@
     <title>Blog | Cameron Barnes</title> 
     <meta name="description" content="Thoughts, feelings and experiences in the blog of front-end website developer Cameron Barnes.">
     <meta name="keywords" content="cameron barnes, cameronspixels, web, front-end, dev, developer, front-end developer, web development student, front-end development, website development">
-    <meta name="canonical" href="http://cameronspixels.co.uk/">
     <link rel="icon" type="image/png" href="favicon.png">
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
@@ -15,7 +14,7 @@
     <meta name="twitter:creator" content="@cameronspixels">
     <meta name="twitter:url" content="https://cameronspixels.co.uk/blog.html/">
     <meta name="twitter:title" content="Blog | Cameron Barnes">
-    <meta name="twitter:description" content="Thoughts, feelings and experiences in the blog of front-end website developer Cameron Barnes.">
+    <meta name="twitter:description" content="Thoughts, feelings and experiences in the blog of aspiring front-end website developer Cameron Barnes.">
     <meta name="twitter:image" content="http://www.15075407.webdevmmu.uk/newnew/img/bg-red.jpg">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
@@ -31,8 +30,8 @@
   <body>
   	<header id="openMenu">
   		<nav>
-        <a href="#openMenu" class="handle handle--open" title="Open mobile menu"></a>
-        <a href="#" class="handle handle--close" title="Close mobile menu"></a>
+        <a href="#openMenu" class="handle handle--open" title="Open mobile menu">Menu</a>
+        <a href="#" class="handle handle--close" title="Close mobile menu">Menu</a>
   			<ul>
           <li><a href="index.html" title="Homepage">Home</a></li>          
   				<li><a href="portfolio-cv.html" title="Portfolio and curriculum vitae">Portfolio and CV</a></li>
@@ -46,19 +45,28 @@
   			<p>Rambling, rambling and more rambling.</p>
         <a class="download" href="" title="">Reading is good for you</a>
   		</section>
-      <svg class="arrow fade" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><title>Arrow to content</title><a href="#content"><g><polygon class="social-icon-outer" points="29.998,16 22,16 22,2 9.999,2 9.999,16 1.999,16 15.999,30  "/></g></a></svg>
+      <svg class="arrow fade" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><title>Arrow to content</title><a href="#content"><g><polygon class="social-icon-outer" points="29.998,16 22,16 22,2 9.999,2 9.999,16 1.999,16 15.999,30"/></g></a></svg>
   	</header>
-  	<main>
-  		<section class="container">
-  			<h2>The Industry</h2>
+  	<main id="content">
+  		<section>
+        <div class="background-img bg-1"><h2>Contents</h2></div>
+        <div class="container">
+        </div>
+      </section>
+      <section id="the-industry" class="container">
+        <h3>The Industry</h3>
         <p></p>
       </section>
-      <section class="container">
-        <h2>Building This Portfolio</h2>
-        <p></p>
+      <section id="building-the-site" class="container blog">
+        <h3>Building the Site</h3>
+        <p>As I’d imagine most students might go, previous iterations of my portfolio send shudders down my spine. I felt that poor design and development decisions couldn’t just be a lack of knowledge though, and a lot of people in industry put empathises on planning - and you could include in that wireframing, prototyping, sticking post-it notes everywhere… which is where I ended up when it came to defining layout.</p>
+        <p>If there’s something that I’ve come to notice since starting working with the web, it’s that design is far from my strong point. I can sit in a code editor and work for days on end, but give me a colour palette and I’ll need a week figuring that out alone.</p>
+        <p>Wary of this, I kept my design decisions simple. Black on white, accented just by red, and various weights of the font Raleway throughout. In theory, even I’d be able to manage that.</p>
+        <p>This is one of the parts of design which I’ve constantly tried to pay attention to. Not doing so is essentially a method of exclusion - and though we can’t all apply that feeling to websites, we’d all know what it’s like for something to be, by design, restricting. Think food allergies, for example - nobody wants to be forced to go hungry.</p>
+        <p>As such, I’ve made an attempt to implement appropriate features from the ground-up. Alt tags and titles are of course a go-to, but I also applied along the way things that I didn’t originally think about. It wasn’t until I attended a talk at Wordcamp Manchester 2017, for example, that I realised how poor browser default focusing way - if forced to use just a keyboard, you’d sometimes not even know that you were tabbing through a page.</p>
       </section>
-      <section class="container">
-        <h2>Optimised</h2>
+      <section id="optimisation-seo" class="container">
+        <h3>Optimisation and SEO</h3>
         <p></p>
       </section>
       <a class="next-page" href="index.html#contact" title="Contact me">
