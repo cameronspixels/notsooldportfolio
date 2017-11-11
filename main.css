@@ -68,7 +68,7 @@ nav a:hover, nav a:active {color: #F00D2E; background-color: #FFF;}
 .container p {padding-bottom: 2rem; line-height: 2rem;}
 .background-img {margin: 0 auto 2rem auto; height: 150px; width: 100%; max-width: 960px; position: relative; background: no-repeat fixed center center; background-size: cover; box-shadow: 1px 1px 1px rgba(13,13,13,0.4);}
 .bg-1 {background-image: url(img/bg-red.jpg);}
-.next-page {margin-top: 2rem; display: block; height: 200px; width: 100%; background-color: #F00D2E; color: #FFF; border: none;}
+.next-page {margin-top: 2rem; display: block; height: 200px; background-color: #F00D2E; color: #FFF;}
 .next-page p {padding: 2.5rem 0 0.5rem 0; color: #FFF; text-align: center; font-style: italic;}
 
 form {text-align: center;}
@@ -79,7 +79,7 @@ input, textarea {padding: 0.5rem; border: 1px solid #0D0D0D;}
 input:focus, textarea:focus {background-color: #FFF; outline: 3px solid #FFBF47;}
 button {padding: 16px 32px; width: auto; background-color: #F00D2E; color: #FFF; border: none; border-bottom: 2px solid #303036;}
 button:hover, button:active {background-color: #D20D2E; cursor: pointer;}
-.label-hint p {margin: 0 0 1.3rem 0; font-size: 0.8rem; text-align: center; line-height: 1rem; padding: 0; color: #BDBDBD;}
+.label-hint p {margin: 0 0 1.3rem 0; font-size: 0.8rem; text-align: center; line-height: 1rem; padding: 0; color: #757575;}
 
 /* Portfolio Page */
 
