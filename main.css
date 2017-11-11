@@ -3,7 +3,7 @@ Black	#050401
 Grey 	#303036
 White #FFFAFF
 Red 	#F00D2E
-Blue 	#30BCED
+Dark	#D20D2E
 */
 
 
@@ -67,7 +67,12 @@ nav a:hover, nav a:active {color: #F00D2E; background-color: #FFF;}
 .container {margin: 0 auto; padding: 12px 16px; max-width: 664px;}
 .container p {padding-bottom: 2rem; line-height: 2rem;}
 .background-img {margin: 0 auto 2rem auto; height: 150px; width: 100%; max-width: 960px; position: relative; background: no-repeat fixed center center; background-size: cover; box-shadow: 1px 1px 1px rgba(13,13,13,0.4);}
-.bg-1 {background-image: url(img/bg-red.jpg);}
+.bg-me {background-image: url(img/bg-me.jpg);}
+.bg-contact {background-image: url(img/bg-keyboard.jpg);}
+.bg-louvre {background-image: url(img/bg-louvre.jpg);}
+.bg-hilton {background-image: url(img/bg-hilton.jpg);}
+.bg-french-police-art {background-image: url(img/bg-french-police-art.jpg);}
+.bg-mmu {background-image: url(img/bg-mmu.jpg);}
 .next-page {margin-top: 2rem; display: block; height: 200px; background-color: #F00D2E; color: #FFF;}
 .next-page p {padding: 2.5rem 0 0.5rem 0; color: #FFF; text-align: center; font-style: italic;}
 
