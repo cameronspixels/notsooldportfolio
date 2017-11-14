@@ -27,7 +27,7 @@
       ga('send', 'pageview');
     </script>
   </head>
-  <body>
+  <body id="top">
   	<header id="openMenu">
   		<nav>
         <a href="#openMenu" class="handle handle--open" title="Open mobile menu">Menu</a>
@@ -43,28 +43,31 @@
         <a class="skiplink" href="#content" title="Skip to main content">Skip to main content</a>
   			<h1>Blog</h1>
   			<p>Rambling, rambling and more rambling.</p>
-        <a class="download" href="" title="">Reading is good for you</a>
+        <a class="download" href="#content" title="">Reading is good for the brain</a>
   		</section>
       <svg class="arrow fade" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>Arrow to content</title><a href="#content"><g><polygon class="social-icon-outer" points="29.998,16 22,16 22,2 9.999,2 9.999,16 1.999,16 15.999,30"/></g></a></svg>
   	</header>
   	<main id="content">
   		<section>
-        <div class="background-img bg-1"><h2>Contents</h2></div>
-        <div class="container">
-        </div>
+        <div class="background-img bg-louvre"><h2>Contents</h2></div>
+        <ul class="container blog-contents">
+          <li><a href="#the-industry" title="">The Industry</a></li>
+          <li><a href="#building-the-site" title="">Building The Site</a></li>
+          <li><a href="#optimisation-seo" title="">Optimisation &amp; SEO</a></li>
+        </ul>
       </section>
-      <section id="the-industry" class="container">
+      <section id="the-industry" class="container blog">
         <h3>The Industry</h3>
-        <p>If there’s one thing that I was always fairly certain of, it’s that I would’ve likely ended up working in the digital space. I didn’t always know where or how I’d get there, but ask anyone who knew me throughout, and you’d be told that it was inevitable. It was consistently obvious to me that digital was growing at a crazy rate, even though I had no indicator as to the actual scale. Looking at the <a href="https://technation.techcityuk.com/" title="TechNation report online">TechNation report</a> and the figures now, and <a href="https://technation.techcityuk.com/pm-foreward/" title="Theresa May TechNation foreword">even Theresa May's on board</a>!</p>
-        <p>My technical skills were always an asset to me. Asking when I was 14 or 15, and I would’ve told you that I wanted to be a game developer. Minecraft — <a href="https://www.theguardian.com/technology/2013/nov/16/minecraft-game-no-rules-changed-gaming" title="">the industry-defining indie game developed by Mojang</a> — was on the up and presented this great, developer-friendly sandbox environment. I couldn’t imagine building something like that from the ground up, but being so open, it was a great platform to learn through modding.</p>
+        <p>If there’s one thing that I was always fairly certain of, it’s that I would’ve likely ended up working in the digital space. I didn’t always know where or how I’d get there, but ask anyone who knew me throughout the past 5 or 6 years of sitting in front of computers, and you’d be told that it was inevitable. It was obvious to me that digital was growing at a crazy rate, even though I had no indicator as to the actual scale. Looking at the <a href="https://technation.techcityuk.com/" title="Tech Nation report online">Tech Nation report</a> and the figures now, you'll note that <a href="https://technation.techcityuk.com/pm-fotargetreward/" title="Theresa May Tech Nation foreword">even Theresa May's on board</a>.</p>
+        <p>My technical skills were always an asset to me. Asking when I was 14 or 15, and I would’ve told you that I wanted to be a game developer. Minecraft — <a href="https://www.theguardian.com/technology/2013/nov/16/minecraft-game-no-rules-changed-gaming" title="Guardian article on Minecraft's success">the industry-defining indie game developed by Mojang</a> — was on the up and presented this great, developer-friendly sandbox environment. I couldn’t imagine building something like that from the ground up, but being so open, it was a great platform to learn through modding.</p>
         <figure>
           <img src="img/minecraft.jpg" alt="Minecraft in-game">
           <figcaption>
             <p>Minecraft, the industry defining indie game.</p>
           </figcaption>
         </figure>
-        <p>Early Minecraft actually taught me a lot. I learnt to mod in Java, which I and a couple of friends would turn into playing around with making (very) basic stick figure platforming games. I learnt basic PHP, how FTP and hosting worked, and how to utilise the command line to run my own public multiplayer sever, which I went on to build a community around. I was then given a lesson in leadership through running that server, which was one of the first meaningful, non-technical lessons.</p>
-        <p>It’s strange to think what could’ve been. I remember well creating an early modding tutorial for Minecraft on YouTube, which at the that of deleting it, had surpassed 120,000 views. Looking at the way that that specific media’s grown, 15 year old me could quite possibly have been on to something. If I’ve learnt one important thing from it all, especially when it comes to ever growing platforms, it’s being part of something niche and ‘weird’ is more often a blessing than a curse, and brings opportunity… if you use it right. <a href="https://www.entrepreneur.com/article/285858" title="">Take that from the best, I guess</a>.</p>
+        <p>Minecraft actually taught me a lot. I learnt to mod in Java, which I and a couple of friends would turn into playing around with making (very) basic stick figure platforming games. I learnt basic PHP, how FTP and hosting worked, and how to utilise the command line to run my own public multiplayer sever, which I went on to build a community around. I was then given a lesson in leadership through running that server.</p>
+        <p>Somewhere in me, I regret stopping it all. It was something niche and ‘weird’, but that's more often a blessing than a curse. <a href="https://www.entrepreneur.com/article/285858" title="Entrepreneur article on success">Doing it right can bring great opportunity</a>. To much a degree, I was lost in trying to find something meaninful to apply it all to, and at the time, games and servers were not that.</p>
         <figure>
           <img src="img/oracle.jpg" alt="The Oracle environment">
           <figcaption>
@@ -74,26 +77,60 @@
         <p>I wanted to be more creative, and lost the heart for programming along the way. Once more, if I look back on that, it was a shame. I went to college studying IT and chose a graphics &amp; media route, as opposed to a programming one. We dabbled in C for a bit, and though I found it fairly easy to pick up having understood the fundamentals of Java (even if I’d forgotten exactly how to write it at this point), I longed for something a little more fulfilling.</p>
         <p>The indecision there meant that I didn’t consider university too much, or even understand entirely how it worked. I found a Digital Media/Marketing course browsing through UCAS one day, and though I still can’t put my finger on why, decided that it would be the only choice. With offers from all universities that I applied to, I chose MMU.</p>
         <p>Perhaps inevitable given the impulse in the decision, I didn’t really ever feel it for marketing. I reasonably well in it, given the lack of real interest. I was part of groups that made this <a href="https://www.youtube.com/watch?v=LBbVDU4mq30" title="Swizzels' Love Hearts video">advertisement for Swizzels’ Love Hearts brand</a>, and created this <a href="https://drive.google.com/file/d/0ByvNqwTNzDddcjI2N255TFhrMFE/view?usp=sharing" title="PDF of Flux Fitness portfolio">theoretical brand extension for Sony Playstation</a> (be warned, though it does NOT download automatically, that links to a big .PDF file). We managed solid firsts for both of those through extensive research and well thought presentation.</p>
-        <figure>
+       <figure>
           <img src="img/swizzels.jpg" alt="Screenshot of the Swizzels' adverstisment">
           <figcaption>
             <p>Intro to the advertisement for Sizzels' Matlow.</p>
           </figcaption>
         </figure>
-        <p></p>
+        <p>However, I did decide to switch my graduation route to Web Development in my final year. I had a thing for the coding aspect of websites ever since I started, and the front-end allows me to squeeze in that itch for creativity. It took a while and a lot of back and forth, but I think that I’ve been dropped in the right place this time around.</p>
+        <p>This was perhaps the context that I was missing when previously learning these programming skills. I didn't have what I would've considered to be a 'real' reason to be extending my Java knowledge, but I've now seen something that I can apply what I learnt previously in programming to.</p>
+        <p>With the intention of progressing the web field, I’ve opted to delve in to as much as I can. I love listening to podcasts, especially when doing things like commuting or getting other work done. As such, I found some ones relevant to the web; <a href="https://syntax.fm/" title="Syntax.fm podcast">Syntax (though they dive a little deeper)</a>, <a href="http://shoptalkshow.com/" title="Shop Talk podcast">Shop Talk</a>, and <a href="https://responsivewebdesign.com/podcast/" title="Responsive Web Design podcast">A Responsive Web Design Podcast</a> are my regular choices. I’ve also taken to reading on the topic - the <a href="https://abookapart.com/" title="A Book Apart books">A Book Apart ones</a> are great, and short! I then look to attend conferences and workshops where time allows going forward. I was recently at <a href="https://2017.manchester.wordcamp.org/" title="Wordcamp Manchester 2017">Wordcamp Manchester 2017</a>, and have a couple of workshops lined up.</p>
+        <a class="blog-a" href="#top" title="Back to top of page">Back to top of page</a>
       </section>
       <section id="building-the-site" class="container blog">
         <h3>Building the Site</h3>
-        <p>As I’d imagine most students might go, previous iterations of my portfolio send shudders down my spine. I felt that poor design and development decisions couldn’t just be a lack of knowledge though, and a lot of people in industry put empathises on planning - and you could include in that wireframing, prototyping, sticking post-it notes everywhere. It’s most of the time the case that, if you’re to put a student website amongst a number of (even junior) professional’s, it’ll stick out like a sore thumb. While I’d argue that my latest effort wasn’t <i>so</i> bad, there were still a lot of things that I’d look at and not think twice about discarding.</p>
-        <p>As such, I went researching. As much as I could look at a professional portfolio and know that it’s a step up, I didn’t know why. As well as taking a look at some past MMU graduate’s sites while they were still linked to, I Googled for some good examples of portfolios in my sort of area - returning some good examples like <a href="" title="">Ian Lunn</a>, <a href="" title="">Matt Farley</a> and <a href="" title="">Emily Ridge</a>. These were the ones that I thought were the <i>best</i> examples at least, with aspects and elements which I deemed attainable.</p>
-        <p>My research returned staples like big buttons position front and center, serving as call-to-actions, and a natural progression through the site (often through links at the end of pages). Icons were also a big thing - visual indicators accompanying text, as opposed to just text alone; I was beginning to see that everywhere.</p>
-        <p>A theme that I saw occasionally and despised was almost anything that hides content, or presents an extra step in order to access it. I’ve no affinity whatsoever towards a carousel of images, and hamburger menus on desktop are a long time pet hate. <a href="">Rafael Caferati’s</a> portfolio, whilst stunning technically, made me give up after clicking right on the carousel just once.</p>
-
-
+        <p>As I’d imagine most students might go, previous iterations of my portfolio send shudders down my spine. I felt that poor design and development decisions couldn’t just be a lack of knowledge though, and a lot of people in industry put empathises on planning - and you could include in that wireframing, prototyping, sticking post-it notes everywhere. It’s most of the time the case that, if you’re to put a student website amongst a number of (even junior) professionals', it’ll stick out like a sore thumb. While I’d argue that my latest effort wasn’t <i>so</i> bad, there were still a lot of things that I’d look at and not think twice about discarding.</p>
+        <p>As such, I went researching. As much as I could look at a professional portfolio and know that it’s a step up, I didn’t know why. As well as taking a look at some past MMU graduate’s sites while they were still linked to, I Googled for some good examples of portfolios in my sort of area - returning some good ones like <a href="https://ianlunn.co.uk/" title="Ian Lunn's web portfolio">Ian Lunn</a>, <a href="http://mattfarley.ca/" title="Matt Farley's web portfolio">Matt Farley</a> and <a href="http://www.emilyridge.ie/" title="Emily Ridge's web portfolio">Emily Ridge</a>. These were the ones that I thought were the <i>best</i> examples at least, with aspects and elements which I deemed attainable to my level.</p>
+        <figure>
+          <img src="img/mobile-wireframe.jpg" alt="My intial mobile wireframe">
+          <figcaption>
+            <p>My intial wireframe designs for mobile.</p>
+          </figcaption>
+        </figure>
+        <p>My research returned staples like big buttons position front and center, serving as call-to-actions, and a natural progression through the site (often through links at the end of pages). Icons were also a big thing - visual indicators accompanying text, as opposed to just text alone; I was beginning to see that everywhere. The Nielsen Norman Group wrote an <a href="https://www.nngroup.com/articles/icon-usability/" title="NN Group artcile on icons">article on icons on the web</a>, which highlights why I really love seeing them - they're (in most cases) universally recognisable, easy targets that immediately resonate with the user - as opposed to plain text, where the context isn't always there straight away.</p>
+        <figure>
+          <img src="img/icons.jpg" alt="Icons used on the web">
+          <figcaption>
+            <p>An example on <a href="http://mattfarley.ca/" title="Matt Farley's web portfolio">mattfarley.ca</a> of icons being use on the web.</p>
+          </figcaption>
+        </figure>
+        <p>A theme that I saw occasionally and despised was almost anything that hides content, or presents an extra step in order to access it. I’ve no affinity whatsoever towards a carousel of images, and hamburger menus on desktop are a long time pet hate. Hidden navigation (and other content) is useful where you can’t appropriately fit content into a viewport - but where you can, and you make the choice to still hide content, it’s even <a href="https://www.nngroup.com/articles/hamburger-menus/" title="NN Group article on menu usability">proven to be much less effective</a>. <a href="https://caferati.me/" title="Rafael Caferati's web portfolio">Rafael Caferati’s portfolio</a>, whilst stunning technically, made me give up after clicking right on the carousel just once.</p>
+        <p>While building the portfolio, one of the technologies that I came across which I’m yet to use is CSS Grids. Hearing that it’s the next best thing, I took to reading into it.  I first came across a CSS Tricks article detailing <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" title="CSS Tricks article on grid">everything that you’d need to start with grid</a>, and following reference from that article, I also picked up a copy of Rachael Andrews’ <a href="https://abookapart.com/products/get-ready-for-css-grid-layout" title="Rachael Andrews' Get Ready for CSS Grid Layout">‘Get Ready for CSS Grid Layout’</a>. It's considered one of the best ways to go about layout in the future, once compatibility is across the board <a href="https://caniuse.com/#feat=css-grid" title="CSS Grids compatibility">(it's almost there!)</a>. Grids remove the need for hacked together methods of positioning elements, which were never made for positioning entire pages in the first place (the likes of floats and to a degree, even positioning like absolute) and present a method that's much easier to control from a CSS point of view.</p>
+        <figure>
+          <img src="img/cssgrids.jpg" alt="CSS Grids compatibility">
+          <figcaption>
+            <p>CSS Grids are almost compatible across the board, as shown by <a href="https://caniuse.com/#feat=css-grid" title="CSS grids compatibility">caniuse.com</a></p>
+          </figcaption>
+        </figure>
+        <p>After implementing it on a short scale though, I came to realise that grid lacked use in the layout that I was using - one that’s very much single column, where content flows naturally without almost any CSS anyway. It still use it in the header - it works well to keep the arrow to the bottom of the viewport, and the nav spanning the width on mobile - but I was hesitant to use it throughout. I’m certainly keen on using it to a greater extent going forward. Something that I feel would be a huge benefit to myself is that it would allow me to experiment with design a lot more with position being so easy be default, and I could break out of keeping things very linear.</p>
+        <p>I’d finally touch on accessibility. Attending Wordcamp Manchester 2017, I was at a talk by specialist <a href="http://www.twitter.com/coolfields/" title="Graham Armfield's Twitter page">Graham Armfield</a>, who noted the ignorance in some modern browsers towards accessibility issues. You could often be tabbing though a page and visually have no idea where you were. Things like that put accessibility in greater context.</p>
+        <p>As such, I’ve taken precautions like altering the default browser focus to include yellow backgrounds on links and yellow outlines on forms - <a href="http://govuk-elements.herokuapp.com/form-elements/" title=".GOV.UK sugesstions on styling form elements">as recommended by .GOV.UK</a>. They also suggest removing presets from form fields, and instead hinting above what you’d like the user to fill in, just so that they don’t lose the suggestion when they begin typing.</p>
+        <a class="blog-a" href="#top" title="Back to top of page">Back to top of page</a>
       </section>
-      <section id="optimisation-seo" class="container">
+      <section id="optimisation-seo" class="container blog">
         <h3>Optimisation and SEO</h3>
-        <p></p>
+        <p>Search Engine Optimisation is what the web uses to prioritise websites in search engines like Google. Data provided when developing the website will be read by these engines, and will factor in to ranking and how well the site is accepted. Websites will even sometimes be not just de-ranked, but disregarded by engines completely, if it's decided that they're making purposeful attempts to abuse the system.</p>      
+        <p>SEO is also something that I’ve often heard contrasting points on as to what is and isn’t relevant - though I imagine that it’s somewhat to be expected on an ever-changing medium like the web.</p>
+        <p>Helpfully, SEO specialists moz.com produced <a href="https://moz.com/blog/seo-meta-tags" title="Moz.com's SEO guide">this guide</a>, refreshed for 2017 to include everything relevant to SEO in the current day. Line that up alongside David Dias’ front-end developer checklist, which has a <a href="https://github.com/thedaviddias/Front-End-Checklist#seo" title="David Dias' front-end-checlist SEO">short section dedicated to SEO</a> and everything else that a developer should include, and you can build a pretty good base as to what you need.</p>
+        <p>There are a few things that stood out to me about reading these and implementing SEO into this portfolio. First is the lack of importance given to meta tags now. If three things were to be highlighted as crucial to search engine performance, you’d go for the &lt;title&gt;, &lt;meta&gt; description, and the body’s &lt;h1&gt; element.</p>
+        <p>Keywords, given the nature of them being easy to essentially spam and abuse, are almost <a href="http://www.wordstream.com/meta-tags" title="Wordstream meta tags guide">entirely disregarded by major search engines like Google</a>. I can appreciate the fact that prominence is given to meaningful, well-written titles and descriptions as opposed a series of jumbled, potentially meaningless keywords.</p>
+        <p>I’d also highlight <a href="https://developers.facebook.com/docs/sharing/webmasters/" title="Facebook's page for website developers">Facebook’s OpenGraph</a> and <a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started" title="Twitter's page for website developers">Twitter’s Cards</a>. Including these within your the head of your website allow you to control how the website is presented when linked across the web.</p>
+        <p>There's an argument to be made from an analytical standpoint that while you could just leave websites to read your default titles and descriptions, it would be wise to manipulate how social sites present them. There <i>could</i> well be benefit to snappier, more to-the-point content given the fast, nonchalant nature of social media.</p>
+        <p>In terms of other optimisations, I’ve also made attempts to condense my media as best as I can. I’ve often neglected image size and how long it’ll take for a user to download. We naturally design for ourselves, and when we’re on fast connection, it’s often hard to notice those who aren’t.</p>
+        <p>Where my previous attempts left my background images at around 250KB, even through using <a href="https://developers.google.com/speed/pagespeed/insights/" title="Google's website Speed Insights">Google’s Speed Insights</a> which provides optimisation for you, this time around I’ve used Photoshop to control both the size and quality of JPEGs. I’ve made attempts to keep all images under 50KB, and where possible, keep most closer to 25KB.</p>
+        <p>In addition to that, my icons are now SVGs. The arrow on the headers and the social media links in the footers are all inline. Being SVGs makes them small downloads to any client, and inline <a href="https://jonsuh.com/blog/animate-svg-with-css/" title="Article on SVG manipulation with CSS">SVG is extremely easy to manipulate</a> as far as animation goes. Animating a JPEG or PNG background-image requires the user loading another image just to change the colour, whereas inline SVG only has to change the fill of the path in order to add a hover state colour. I've seen the light.</p>
+        <a class="blog-a" href="#top" title="Back to top of page">Back to top of page</a>
       </section>
       <a class="next-page" href="index.html#contact" title="Contact me">
         <p>Need to get in touch? Go to...</p>
@@ -102,7 +139,7 @@
   	</main>
     <footer>
       <div>
-        <p>Designed and developed by <a href="http://www.cameronspixels.co.uk/" target="_blank" title="Cameron Barnes' website">Cameron Barnes</a>.</p>
+        <p>Designed and developed by <a href="http://www.cameronspixels.co.uk/" title="Cameron Barnes' website">Cameron Barnes</a>.</p>
         <ul class="footer-nav">
           <li><a href="index.html" title="Homepage">Home</a></li>
           <li><a href="portfolio-cv.html" title="Portfolio and cirruculum vitae">Portfolio and CV</a></li>
@@ -112,7 +149,7 @@
         <ul class="footer-social">
           <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Twitter</title>
-            <a href="http://www.twitter.com/cameronspixels/" target="_blank">
+            <a href="http://www.twitter.com/cameronspixels/">
               <g>
                 <circle class="social-icon-outer" cx="200" cy="200" r="200"/>
               </g>
@@ -128,7 +165,7 @@
           </svg></li>
           <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Instagram</title>
-            <a href="http://www.instagram.com/cameronspixels_/" target="_blank">
+            <a href="http://www.instagram.com/cameronspixels_/">
               <g>
                 <circle class="social-icon-outer" cx="200" cy="200" r="200"/>
               </g>
@@ -141,7 +178,7 @@
           </svg></li>
           <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Linkedin</title>
-            <a class="" href="http://www.linkedin.com/in/cameron-barnes/" target="_blank">
+            <a href="http://www.linkedin.com/in/cameron-barnes/">
               <g>
                 <circle class="social-icon-outer" cx="200" cy="200" r="200"/>
               </g>

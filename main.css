@@ -9,6 +9,7 @@ Dark	#D20D2E
 
 :focus {background-color: #FFBF47;}
 
+
 body {margin: 0; padding: 0; background-color: #FFF; color: #303036; font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif; font-size: 100%; font-weight: 400;}
 
 /* Text Throughout */
@@ -31,14 +32,10 @@ header .download {width: 200px;}
 @keyframes fade-title-in {0% {opacity: 0;} 100% {opacity: 1;}}
 @keyframes drop-in {0% {margin-top: -2px;} 100% {margin-top: 0px;}}
 
-.arrow {padding: 16px; height: 32px; grid-row: 5/6; grid-column: 3/4; justify-self: center; align-self: center; transition: margin-top 220ms ease-out; border: none; animation: spinny 10s infinite ease-in-out;}
+.arrow {padding: 16px; height: 32px; grid-row: 5/6; grid-column: 3/4; justify-self: center; align-self: center; transition: margin-top 220ms ease-out; border: none; animation: hovering 10s infinite ease-in-out;}
 .arrow:hover {margin-top: 20px; cursor: pointer; transition: margin-top 220ms ease-out;}
 
-/* Arrow spins every 10 seconds instead of dropping down.
-@keyframes spinny {0% {transform: rotateZ(0deg);} 30% {transform: rotateZ(0deg);} 40% {transform: rotateZ(360deg);} 50% {transform: rotateZ(0deg);} 100% {transform: rotateZ(0deg);}}
-*/
-
-@keyframes spinny {0% {margin-bottom: 0px;} 20% {margin-bottom: 0px;} 22% {margin-bottom: -15px;} 24% {margin-bottom: 0px;} 26% {margin-bottom: -15px;} 28% {margin-bottom: 0px;} 100% {margin-bottom: 0px;}} 
+@keyframes hovering {0% {margin-bottom: 0px;} 20% {margin-bottom: 0px;} 22% {margin-bottom: -15px;} 24% {margin-bottom: 0px;} 26% {margin-bottom: -15px;} 28% {margin-bottom: 0px;} 100% {margin-bottom: 0px;}} 
 
 /* Navigation */
 
@@ -65,7 +62,7 @@ nav a:hover, nav a:active {color: #F00D2E; background-color: #FFF;}
 .social-icon:hover .social-icon-outer {fill: #424242; transition: fill 220ms;}
 
 .container {margin: 0 auto; padding: 12px 16px; max-width: 664px;}
-.container p {padding-bottom: 2rem; line-height: 2rem;}
+.container p {padding-bottom: 2rem; line-height: 2;}
 .background-img {margin: 0 auto 2rem auto; height: 150px; width: 100%; max-width: 960px; position: relative; background: no-repeat fixed center center; background-size: cover; box-shadow: 1px 1px 1px rgba(13,13,13,0.4);}
 .bg-me {background-image: url(img/bg-me.jpg);}
 .bg-contact {background-image: url(img/bg-keyboard.jpg);}
@@ -84,18 +81,19 @@ input, textarea {padding: 0.5rem; border: 1px solid #0D0D0D;}
 input:focus, textarea:focus {background-color: #FFF; outline: 3px solid #FFBF47;}
 button {padding: 16px 32px; width: auto; background-color: #F00D2E; color: #FFF; border: none; border-bottom: 2px solid #303036;}
 button:hover, button:active {background-color: #D20D2E; cursor: pointer;}
-.label-hint p {margin: 0 0 1.3rem 0; font-size: 0.8rem; text-align: center; line-height: 1rem; padding: 0; color: #757575;}
+.label-hint p {margin: 0 0 1.3rem 0; font-size: 0.8rem; text-align: center; line-height: 1.6; padding: 0; color: #757575;}
 
 /* Portfolio Page */
 
-.port-web {margin: 1rem 0 5rem 0; height: 400px; width: 100%; display: block; position: relative; background: no-repeat center; background-size: cover; border: none;}
+.self-portrait {margin: 1rem 0 4rem 0; height: auto; width: 100%; border-radius: 50%;}
+.port-web {margin: 1rem 0 5rem 0; height: 400px; width: 100%; display: block; position: relative; background: no-repeat top center; background-size: cover; border: none;}
 .port-web:hover {border: none;}
 .port-web:hover .port-web-text, .port-web:active .port-web-text {background-color: rgba(240,13,46,0.9); transition: background-color 220ms ease-in-out;}
 .port-web-text {margin: 0; padding: 16px 0; width: 100%; position: absolute; bottom: 0; background-color: rgba(1,1,1,0.9); color: #FFF; transition: background-color 220ms ease-in-out;}
-.bg-student-survival-guide {background-image: url(img/ssg-default.jpg);}
+.bg-student-survival-guide {background-image: url(img/ssg-mobile.jpg); transition: background-image 220ms ease-in-out;}
 h4 {margin-bottom: 16px; font-size: 1.2rem; font-weight: 400;}
 h4, .port-web-text p {margin: 16px 16px 16px 16px; padding: 0;}
-.port-web-text p {line-height: 1.6rem;}
+.port-web-text p {line-height: 1.6;}
 
 /* CV Page */
 
@@ -106,10 +104,14 @@ h4, .port-web-text p {margin: 16px 16px 16px 16px; padding: 0;}
 .cvcontainer p {padding-bottom: 0;}
 .cvcontainer {padding-bottom: 0.5rem;}
 
+.blog-contents {padding: 1rem 0; text-align: center;}
+.blog-contents li {margin: 1.5rem 0; display: block;}
+.blog-contents a {width: 100%;}
 .blog p:first-of-type {text-indent: 2rem;}
+.blog h3 {margin: 3rem 0 3.3rem 0;}
 figure {margin: 0 auto; padding-bottom: 2rem; max-width: 540px;}
 figure img {width: 100%;}
-.container figure p {margin: 0; padding: 0; font-size: 0.8rem; font-style: italic; line-height: 1.4rem; text-align: left;}
+.container figure p {margin: 0; padding: 0; font-size: 0.8rem; font-style: italic; line-height: 1.4; text-align: left;}
 
 
 /* Footer */
@@ -118,16 +120,19 @@ footer {padding: 1rem 0 2.2rem 0; width: 100%; background-color: #303036;}
 footer div {margin: 0 auto; padding: 12px 32px; max-width: 640px;}
 footer, footer a {color: #FFF; border-color: #FFF;}
 footer a:hover, footer a:active {background-color: #303036;}
-footer p {padding-bottom: 1rem; line-height: 1.2rem;}
+footer p {padding-bottom: 1rem; line-height: 1.2;}
 footer ul {margin: 0; padding: 0 0 2rem 16px; list-style-type: none;}
 footer li {padding-bottom: 0.2rem;}
 .footer-social img {margin: 0 16px 0 0; height: 25px; width: 25px; display: inline-block;}
 .footer-social {padding: 0 0 16px 16px;}
 .footer-social li {display: inline-block;}
 
-@media (min-width: 664px) {
+
+/* Being a largely single column site, not a lot needs to change here - hence a single media query */
+
+@media (min-width: 760px) {
 main {padding-top: 3rem;}
-.container p {font-size: 1.1rem; line-height: 2.2rem;}
+.container p {font-size: 1.1rem; line-height: 2.2;}
 .background-img {margin: 3rem auto; height: 250px;}
 .handle {display: none;}
 nav ul {padding: 0; height: auto; opacity: 1; display: block; height: auto; position: relative; background-image: none; box-shadow: 2px 2px 2px rgba(13,13,13,0.3);}
@@ -140,4 +145,6 @@ nav a:hover {color: #303036; border-bottom: 2px solid #F00D2E;}
 footer {padding: 2.5rem 0 3.7rem 0;}
 label {font-size: 1.2rem;}
 input, textarea, button {margin: 1rem auto 2rem auto; font-size: 1rem;}
+.blog-contents li {margin: 1.5rem 1.5rem; display: inline-block;}
+.bg-student-survival-guide {background-image: url(img/ssg-desktop.jpg);}
 }
