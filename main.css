@@ -1,18 +1,7 @@
-/*
-Black	#050401
-Grey 	#303036
-White #FFFAFF
-Red 	#F00D2E
-Dark	#D20D2E
-*/
-
-
+/* Gives a yellow background to focused elements, as opposed to potentially poor brower defaults */
 :focus {background-color: #FFBF47;}
 
-
 body {margin: 0; padding: 0; background-color: #FFF; color: #303036; font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif; font-size: 100%; font-weight: 400;}
-
-/* Text Throughout */
 
 a {color: #0D0D0D; text-decoration: none; border-bottom: 2px solid #303036;}
 a:hover, a:active {color: #F00D2E; background-color: #FFF; border-color: #F00D2E;}
@@ -45,6 +34,8 @@ nav a {padding: 32px 0px; width: 100%; display: block; color: #FFF; text-indent:
 nav a:hover, nav a:active {color: #F00D2E; background-color: #FFF;}
 .active {color: #FFF;}
 
+/* I was previously using jQuery for the responsive menu. Thanks to the Code Computer guys, who introduced me to CSS tagreting and helped me not rely on the Javascript. */
+
 .handle {padding: 20px 20px; width: calc(100% - 40px); z-index: 3; background-color: #FFF; color: #0D0D0D; text-align: right;}
 .handle:hover {cursor: pointer;}
 .handle--close {display: none;}
@@ -73,6 +64,8 @@ nav a:hover, nav a:active {color: #F00D2E; background-color: #FFF;}
 .next-page {margin-top: 2rem; display: block; height: 200px; background-color: #F00D2E; color: #FFF;}
 .next-page p {padding: 2.5rem 0 0.5rem 0; color: #FFF; text-align: center; font-style: italic;}
 
+/* Contact form */
+
 form {text-align: center;}
 label, input, button, textarea {width: 75%; max-width: 600px; display: block; font-family: "Raleway", sans-serif;}
 label {margin: 0 auto 1.2rem auto;}
@@ -85,7 +78,8 @@ button:hover, button:active {background-color: #D20D2E; cursor: pointer;}
 
 /* Portfolio Page */
 
-.self-portrait {margin: 1rem 0 4rem 0; height: auto; width: 100%; border-radius: 50%;}
+.self-portrait {text-align: center;}
+.self-portrait img {height: auto; width: 100%; max-width: 200px; display: inline-block; text-align: center; border-radius: 50%;}
 .port-web {margin: 1rem 0 5rem 0; height: 400px; width: 100%; display: block; position: relative; background: no-repeat top center; background-size: cover; border: none;}
 .port-web:hover {border: none;}
 .port-web:hover .port-web-text, .port-web:active .port-web-text {background-color: rgba(240,13,46,0.9); transition: background-color 220ms ease-in-out;}
@@ -103,6 +97,8 @@ h4, .port-web-text p {margin: 16px 16px 16px 16px; padding: 0;}
 
 .cvcontainer p {padding-bottom: 0;}
 .cvcontainer {padding-bottom: 0.5rem;}
+
+/* Blogs */
 
 .blog-contents {padding: 1rem 0; text-align: center;}
 .blog-contents li {margin: 1.5rem 0; display: block;}
