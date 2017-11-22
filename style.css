@@ -163,11 +163,10 @@ nav {
   text-align: right; }
   .handle:hover {
     cursor: pointer; }
-  .handle .handle--close {
-    display: none; }
 
-#openMenu:target .handle--open {
+.handle--close {
   display: none; }
+
 #openMenu:target .handle--close {
   display: inline-block;
   position: fixed;
@@ -180,6 +179,8 @@ nav {
 #openMenu:target ul {
   height: 100vh;
   opacity: 1; }
+#openMenu:target .handle--open {
+  display: none; }
 
 .skiplink {
   height: 1px;
@@ -244,6 +245,16 @@ nav {
     line-height: 1.4;
     text-align: left; }
 
+.self-portrait {
+  text-align: center; }
+  .self-portrait img {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%; }
+
 .background-img {
   margin: 0 auto 2rem auto;
   height: 150px;
@@ -265,9 +276,6 @@ nav {
 
 .bg-hilton {
   background-image: url(img/bg-hilton.jpg); }
-
-.bg-french-police-art {
-  background-image: url(img/bg-french-police-art.jpg); }
 
 .bg-mmu {
   background-image: url(img/bg-mmu.jpg); }
@@ -332,110 +340,6 @@ button {
   padding: 0;
   color: #757575; }
 
-.self-portrait {
-  text-align: center; }
-
-.self-portrait img {
-  height: auto;
-  width: 100%;
-  max-width: 200px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%; }
-
-.port-web {
-  margin: 1rem 0 5rem 0;
-  height: 400px;
-  width: 100%;
-  display: block;
-  position: relative;
-  background: no-repeat top center;
-  background-size: cover;
-  border: none; }
-
-.port-web:hover {
-  border: none; }
-
-.port-web:hover .port-web-text, .port-web:active .port-web-text {
-  background-color: rgba(240, 13, 46, 0.9);
-  transition: background-color 220ms ease-in-out; }
-
-.port-web-text {
-  margin: 0;
-  padding: 16px 0;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(1, 1, 1, 0.9);
-  color: #FFF;
-  transition: background-color 220ms ease-in-out; }
-
-.bg-student-survival-guide {
-  background-image: url(img/ssg-mobile.jpg);
-  transition: background-image 220ms ease-in-out; }
-
-h4 {
-  margin-bottom: 16px;
-  font-size: 1.2rem;
-  font-weight: 400; }
-
-h4, .port-web-text p {
-  margin: 16px 16px 16px 16px;
-  padding: 0; }
-
-.port-web-text p {
-  line-height: 1.6; }
-
-.self-portrait {
-  text-align: center; }
-  .self-portrait img {
-    height: auto;
-    width: 100%;
-    max-width: 200px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%; }
-
-.port-web-text {
-  margin: 0;
-  padding: 16px 0;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(1, 1, 1, 0.9);
-  color: #FFF;
-  transition: background-color 220ms ease-in-out; }
-
-.port-web {
-  margin: 1rem 0 5rem 0;
-  height: 400px;
-  width: 100%;
-  display: block;
-  position: relative;
-  background: no-repeat top center;
-  background-size: cover;
-  border: none; }
-  .port-web :hover {
-    border: none; }
-  .port-web .port-web:hover .port-web-text, .port-web .port-web:active .port-web-text {
-    background-color: rgba(240, 13, 46, 0.9);
-    transition: background-color 220ms ease-in-out; }
-
-.bg-student-survival-guide {
-  background-image: url(img/ssg-mobile.jpg);
-  transition: background-image 220ms ease-in-out; }
-
-h4 {
-  margin: 16px 16px 16px 16px;
-  padding: 0;
-  font-size: 1.2rem;
-  font-weight: 400; }
-
-.port-web-text p {
-  margin: 16px 16px 16px 16px;
-  padding: 0;
-  line-height: 1.6; }
-
 .center-button {
   text-align: center; }
 
@@ -464,6 +368,46 @@ h4 {
   .cvcontainer p {
     padding-bottom: 0; }
 
+.port-web-text {
+  margin: 0;
+  padding: 16px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(1, 1, 1, 0.9);
+  color: #FFF;
+  transition: background-color 220ms ease-in-out; }
+
+.port-web {
+  margin: 1rem 0 5rem 0;
+  height: 400px;
+  width: 100%;
+  display: block;
+  position: relative;
+  background: no-repeat top center;
+  background-size: cover;
+  border: none; }
+  .port-web :hover {
+    border: none; }
+  .port-web:hover .port-web-text, .port-web:active .port-web-text {
+    background-color: rgba(240, 13, 46, 0.9);
+    transition: background-color 220ms ease-in-out; }
+
+.bg-student-survival-guide {
+  background-image: url(img/ssg-mobile.jpg);
+  transition: background-image 220ms ease-in-out; }
+
+h4 {
+  margin: 16px 16px 16px 16px;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 400; }
+
+.port-web-text p {
+  margin: 16px 16px 16px 16px;
+  padding: 0;
+  line-height: 1.6; }
+
 .blog-contents {
   padding: 1rem 0;
   text-align: center; }
@@ -485,6 +429,13 @@ figure {
   figure img {
     width: 100%; }
 
+@media (min-width: 760px) {
+  .blog-contents li {
+    margin: 1.5rem 1.5rem;
+    display: inline-block; }
+
+  .bg-student-survival-guide {
+    background-image: url(img/ssg-desktop.jpg); } }
 footer {
   padding: 1rem 0 2.2rem 0;
   width: 100%;
@@ -535,12 +486,6 @@ footer {
     margin: 3rem auto;
     height: 250px; }
 
-  header {
-    background-image: url(img/editato.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; }
-
   .nav-ghost {
     margin: 24px 16px;
     display: inline-block; }
@@ -555,13 +500,6 @@ footer {
 
   input, textarea, button {
     margin: 1rem auto 2rem auto;
-    font-size: 1rem; }
-
-  .blog-contents li {
-    margin: 1.5rem 1.5rem;
-    display: inline-block; }
-
-  .bg-student-survival-guide {
-    background-image: url(img/ssg-desktop.jpg); } }
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */

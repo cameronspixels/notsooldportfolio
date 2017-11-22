@@ -4,80 +4,42 @@ $white: #FFF;
 $red: #F00D2E;
 $darkred: #D20D2E;
 $yellow: #FFBF47;
-
 :focus {background-color: $yellow;}
-
 body {margin: 0; padding: 0; background-color: $white; color: $grey; font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif; font-size: 100%; font-weight: 400;}
-
 a {color: $black; text-decoration: none; border-bottom: 2px solid $grey; &:hover, &:active {color: $red; background-color: $white; border-color: $red;}}
 h1 {margin-bottom: 3.3rem; padding: 0 12px; font-size: 2.3rem; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0px 1px rgba(13,13,13,0.4);}
 h2 {margin: 0; width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: $white; font-size: 2.5rem; font-weight: 500; text-align: center; text-shadow: 0px 1px rgba(13,13,13,0.4);}
 h3 {margin: 1rem 0 3.3rem 0; color: $red; font-size: 2rem; text-align: center;}
 h5 {margin-top: 2rem; color: $white; font-size: 2rem; font-weight: 500; text-align: center;}
-
 @import 'header';
 @import 'nav';
-
 .social-icon {width: 38px; height: auto; .social-icon-outer {fill: #212121; transition: fill 220ms;} .social-icon-fill {fill: $white;} &:hover .social-icon-outer {fill: #424242; transition: fill 220ms;}}
-
 .container {margin: 0 auto; padding: 12px 16px; max-width: 664px; p {padding-bottom: 2rem; line-height: 2;} figure p {margin: 0; padding: 0; font-size: 0.8rem; font-style: italic; line-height: 1.4; text-align: left;}}
-
+.self-portrait {text-align: center; img {height: auto; width: 100%; max-width: 200px; display: inline-block; text-align: center; border-radius: 50%;}}
 .background-img {margin: 0 auto 2rem auto; height: 150px; width: 100%; max-width: 960px; position: relative; background: no-repeat fixed center center; background-size: cover; box-shadow: 1px 1px 1px rgba(13,13,13,0.4);}
-
 .bg-me {background-image: url(img/bg-me.jpg);}
 .bg-contact {background-image: url(img/bg-keyboard.jpg);}
 .bg-louvre {background-image: url(img/bg-louvre.jpg);}
 .bg-hilton {background-image: url(img/bg-hilton.jpg);}
-.bg-french-police-art {background-image: url(img/bg-french-police-art.jpg);}
 .bg-mmu {background-image: url(img/bg-mmu.jpg);}
-
 .next-page {margin-top: 2rem; display: block; height: 200px; background-color: $red; color: $white; p {padding: 2.5rem 0 0.5rem 0; color: $white; text-align: center; font-style: italic;}}
-
 form {text-align: center;}
 label {margin: 0 auto 1.2rem auto; width: 75%; max-width: 600px; display: block; font-family: "Raleway", sans-serif;}
 input, textarea {margin: 0.5rem auto 2.5rem auto; padding: 0.5rem; width: 75%; max-width: 600px; display: block; font-family: "Raleway", sans-serif; font-size: 0.8rem; border: 1px solid $black; &:focus {background-color: $white; outline: 3px solid $yellow;}}
 button {margin: 0.5rem auto 2.5rem auto; width: 75%; max-width: 600px; display: block; font-family: "Raleway", sans-serif; font-size: 0.8rem; padding: 16px 32px; width: auto; background-color: $red; color: $white; border: none; border-bottom: 2px solid $grey; &:hover, &:active {background-color: $darkred; cursor: pointer;}}
 .label-hint p {margin: 0 0 1.3rem 0; font-size: 0.8rem; text-align: center; line-height: 1.6; padding: 0; color: #757575;}
-
-.self-portrait {text-align: center;}
-.self-portrait img {height: auto; width: 100%; max-width: 200px; display: inline-block; text-align: center; border-radius: 50%;}
-.port-web {margin: 1rem 0 5rem 0; height: 400px; width: 100%; display: block; position: relative; background: no-repeat top center; background-size: cover; border: none;}
-.port-web:hover {border: none;}
-.port-web:hover .port-web-text, .port-web:active .port-web-text {background-color: rgba(240,13,46,0.9); transition: background-color 220ms ease-in-out;}
-.port-web-text {margin: 0; padding: 16px 0; width: 100%; position: absolute; bottom: 0; background-color: rgba(1,1,1,0.9); color: $white; transition: background-color 220ms ease-in-out;}
-.bg-student-survival-guide {background-image: url(img/ssg-mobile.jpg); transition: background-image 220ms ease-in-out;}
-h4 {margin-bottom: 16px; font-size: 1.2rem; font-weight: 400;}
-h4, .port-web-text p {margin: 16px 16px 16px 16px; padding: 0;}
-.port-web-text p {line-height: 1.6;}
-
-.self-portrait {text-align: center; img {height: auto; width: 100%; max-width: 200px; display: inline-block; text-align: center; border-radius: 50%;}}
-
-.port-web-text {margin: 0; padding: 16px 0; width: 100%; position: absolute; bottom: 0; background-color: rgba(1,1,1,0.9); color: $white; transition: background-color 220ms ease-in-out;}
-.port-web {margin: 1rem 0 5rem 0; height: 400px; width: 100%; display: block; position: relative; background: no-repeat top center; background-size: cover; border: none; :hover {border: none;} .port-web:hover .port-web-text, .port-web:active .port-web-text {background-color: rgba(240,13,46,0.9); transition: background-color 220ms ease-in-out;}}
-.bg-student-survival-guide {background-image: url(img/ssg-mobile.jpg); transition: background-image 220ms ease-in-out;}
-h4 {margin: 16px 16px 16px 16px; padding: 0; font-size: 1.2rem; font-weight: 400;}
-.port-web-text p { margin: 16px 16px 16px 16px; padding: 0; line-height: 1.6;}
-
 .center-button {text-align: center;}
 .download {margin-bottom: 2rem; padding: 16px; display: inline-block; background-color: $red; color: $white; font-size: 0.8rem; box-shadow: 1px 1px 1px rgba(13,13,13,0.2); &:hover {background-color: $darkred; color: $white; cursor: pointer; border-color: $grey;}}
 .next-page:hover {background-color: $darkred; color: $white; cursor: pointer; border-color: $grey;}
 .cvcontainer {padding-bottom: 0.5rem; p {padding-bottom: 0;}}
-
-.blog-contents {padding: 1rem 0; text-align: center; li {margin: 1.5rem 0; display: block;} a {width: 100%;}}
-.blog { p:first-of-type {text-indent: 2rem;} h3 {margin: 3rem 0 3.3rem 0;}}
-figure {margin: 0 auto; padding-bottom: 2rem; max-width: 540px; img {width: 100%;}}
-
+@import 'subpages';
 @import 'footer';
-
 @media (min-width: 760px) {
 main {padding-top: 3rem;}
 .container p {font-size: 1.1rem; line-height: 2.2;}
 .background-img {margin: 3rem auto; height: 250px;}
-header {background-image: url(img/editato.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;}
 .nav-ghost {margin: 24px 16px; display: inline-block;}
 .download {padding: 16px 22px; font-size: 1rem; box-shadow: 2px 2px 2px rgba(13,13,13,.2);}
 label {font-size: 1.2rem;}
 input, textarea, button {margin: 1rem auto 2rem auto; font-size: 1rem;}
-.blog-contents li {margin: 1.5rem 1.5rem; display: inline-block;}
-.bg-student-survival-guide {background-image: url(img/ssg-desktop.jpg);}
 }
