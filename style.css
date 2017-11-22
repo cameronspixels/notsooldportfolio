@@ -1,6 +1,15 @@
 :focus {
   background-color: #FFBF47; }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+  color: #303036;
+  font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+  font-size: 100%;
+  font-weight: 400; }
+
 a {
   color: #0D0D0D;
   text-decoration: none;
@@ -104,6 +113,12 @@ header {
     cursor: pointer;
     transition: margin-top 220ms ease-out; }
 
+@media (min-width: 760px) {
+  header {
+    background-image: url(img/editato.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; } }
 nav {
   grid-row: 1/6;
   grid-column: 1/6; }
@@ -135,8 +150,9 @@ nav {
   nav:hover, nav:active {
     color: #F00D2E;
     background-color: #FFF; }
-  nav .active {
-    color: #FFF; }
+
+.active {
+  color: #FFF; }
 
 .handle {
   padding: 20px 20px;
@@ -172,6 +188,35 @@ nav {
   left: 0;
   top: -500px; }
 
+@media (min-width: 760px) {
+  nav ul {
+    padding: 0;
+    height: auto;
+    opacity: 1;
+    display: block;
+    height: auto;
+    position: relative;
+    background-image: none;
+    box-shadow: 2px 2px 2px rgba(13, 13, 13, 0.3); }
+  nav li {
+    display: inline-block; }
+  nav a {
+    margin: 0 10px;
+    padding: 20px 0;
+    width: 160px;
+    color: #303036;
+    text-align: center;
+    text-indent: 0; }
+    nav a:hover {
+      color: #303036;
+      border-bottom: 2px solid #F00D2E; }
+
+  .active {
+    color: #303036;
+    border-bottom: 2px solid #F00D2E; }
+
+  .handle {
+    display: none; } }
 .social-icon {
   width: 38px;
   height: auto; }
@@ -399,7 +444,7 @@ h4 {
   padding: 16px;
   display: inline-block;
   background-color: #F00D2E;
-  color: #FFFAFF;
+  color: #FFF;
   font-size: 0.8rem;
   box-shadow: 1px 1px 1px rgba(13, 13, 13, 0.2); }
   .download:hover {
@@ -474,5 +519,49 @@ footer {
     height: 25px;
     width: 25px;
     display: inline-block; }
+
+@media (min-width: 760px) {
+  footer {
+    padding: 2.5rem 0 3.7rem 0; } }
+@media (min-width: 760px) {
+  main {
+    padding-top: 3rem; }
+
+  .container p {
+    font-size: 1.1rem;
+    line-height: 2.2; }
+
+  .background-img {
+    margin: 3rem auto;
+    height: 250px; }
+
+  header {
+    background-image: url(img/editato.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+
+  .nav-ghost {
+    margin: 24px 16px;
+    display: inline-block; }
+
+  .download {
+    padding: 16px 22px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 2px rgba(13, 13, 13, 0.2); }
+
+  label {
+    font-size: 1.2rem; }
+
+  input, textarea, button {
+    margin: 1rem auto 2rem auto;
+    font-size: 1rem; }
+
+  .blog-contents li {
+    margin: 1.5rem 1.5rem;
+    display: inline-block; }
+
+  .bg-student-survival-guide {
+    background-image: url(img/ssg-desktop.jpg); } }
 
 /*# sourceMappingURL=style.css.map */

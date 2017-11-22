@@ -1,0 +1,7 @@
+header {height: 100vh; display: grid; grid-template-columns: repeat 5(1fr); grid-template-rows: 1fr 1fr 1fr 1fr 1fr; background-color: $white; border-bottom: 1px solid rgba(13,13,13,0.1); section {grid-column: 1/6; grid-row: 2/4; text-align: center;} .download {width: 200px;}}
+.fade {opacity: 1; animation: fade-title-in 300ms 1 ease-in; h1, p {animation: drop-in 220ms 1 ease-in-out;}}
+@keyframes fade-title-in {0% {opacity: 0;} 100% {opacity: 1;}}
+@keyframes drop-in {0% {margin-top: -2px;} 100% {margin-top: 0px;}}
+@keyframes hovering {0% {margin-bottom: 0px;} 20% {margin-bottom: 0px;} 22% {margin-bottom: -15px;} 24% {margin-bottom: 0px;} 26% {margin-bottom: -15px;} 28% {margin-bottom: 0px;} 100% {margin-bottom: 0px;}} 
+.arrow {padding: 16px; height: 32px; grid-row: 5/6; grid-column: 3/4; justify-self: center; align-self: center; transition: margin-top 220ms ease-out; border: none; animation: hovering 10s infinite ease-in-out; &:hover{margin-top: 20px; cursor: pointer; transition: margin-top 220ms ease-out;}}
+@media (min-width: 760px) {header {background-image: url(img/editato.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;}}
