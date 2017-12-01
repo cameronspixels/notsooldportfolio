@@ -1,45 +1,226 @@
-$black: #0D0D0D;
-$grey: #303036;
+$black: #0D0D0D; $grey: #303036;
 $white: #FFF;
-$red: #F00D2E;
-$darkred: #D20D2E;
+$red: #F00D2E; $darkred: #D20D2E;
+$blue: #30bced; $blueisdark: #1593c1;
 $yellow: #FFBF47;
-:focus {background-color: $yellow;}
-body {margin: 0; padding: 0; background-color: $white; color: $grey; font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif; font-size: 100%; font-weight: 400;}
-a {color: $black; text-decoration: none; border-bottom: 2px solid $grey; &:hover, &:active {color: $red; background-color: $white; border-color: $red;}}
-h1 {margin-bottom: 3.3rem; padding: 0 12px; font-size: 2.3rem; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0px 1px rgba(13,13,13,0.4);}
-h2 {margin: 0; width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: $white; font-size: 2.5rem; font-weight: 500; text-align: center; text-shadow: 0px 1px rgba(13,13,13,0.4);}
-h3 {margin: 1rem 0 3.3rem 0; color: $red; font-size: 2rem; text-align: center;}
-h5 {margin-top: 2rem; color: $white; font-size: 2rem; font-weight: 500; text-align: center;}
+
+:focus {
+	background-color: $yellow;
+}
+
+body {
+	margin: 0; padding: 0;
+	background-color: $white; color: $grey;
+	font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif; font-size: 100%; font-weight: 400;
+}
+a {
+	color: $black;
+	text-decoration: none;
+	border-bottom: 2px solid $grey;
+	&:hover, &:active {
+		color: $blue; background-color: $white; border-color: $blue;
+	}
+}
+
+h1 {
+	margin-bottom: 3.3rem;
+	font-size: 2.3rem; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0px 1px rgba(13,13,13,0.4);
+}
+h2 {
+	margin: 0;
+	width: 100%;
+	position: absolute;
+	top: 50%; left: 50%; transform: translate(-50%, -50%);
+	color: $white;
+	font-size: 2.5rem; font-weight: 500; text-align: center; text-shadow: 0px 1px rgba(13,13,13,0.4);
+}
+h3 {
+	margin: 1rem 0 3.3rem 0;
+	color: $red;
+	font-size: 2rem; text-align: center;
+}
+h5 {
+	margin-top: 2rem;
+	color: $white;
+	font-size: 2rem; font-weight: 500; text-align: center;
+}
+
 @import 'header';
 @import 'nav';
-.social-icon {width: 38px; height: auto; .social-icon-outer {fill: #212121; transition: fill 220ms;} .social-icon-fill {fill: $white;} &:hover .social-icon-outer {fill: #424242; transition: fill 220ms;}}
-.container {margin: 0 auto; padding: 12px 16px; max-width: 664px; p {padding-bottom: 2rem; line-height: 2;} figure p {margin: 0; padding: 0; font-size: 0.8rem; font-style: italic; line-height: 1.4; text-align: left;}}
-.self-portrait {text-align: center; img {height: auto; width: 100%; max-width: 200px; display: inline-block; text-align: center; border-radius: 50%;}}
-.background-img {margin: 0 auto 2rem auto; height: 150px; width: 100%; max-width: 960px; position: relative; background: no-repeat fixed center center; background-size: cover; box-shadow: 1px 1px 1px rgba(13,13,13,0.4);}
-.bg-me {background-image: url(img/bg-me.jpg);}
-.bg-contact {background-image: url(img/bg-keyboard.jpg);}
-.bg-louvre {background-image: url(img/bg-louvre.jpg);}
-.bg-hilton {background-image: url(img/bg-hilton.jpg);}
-.bg-mmu {background-image: url(img/bg-mmu.jpg);}
-.next-page {margin-top: 2rem; display: block; height: 200px; background-color: $red; color: $white; p {padding: 2.5rem 0 0.5rem 0; color: $white; text-align: center; font-style: italic;}}
-form {text-align: center;}
-label {margin: 0 auto 1.2rem auto; width: 75%; max-width: 600px; display: block; font-family: "Raleway", sans-serif;}
-input, textarea {margin: 0.5rem auto 2.5rem auto; padding: 0.5rem; width: 75%; max-width: 600px; display: block; font-family: "Raleway", sans-serif; font-size: 0.8rem; border: 1px solid $black; &:focus {background-color: $white; outline: 3px solid $yellow;}}
-button {margin: 0.5rem auto 2.5rem auto; width: 75%; max-width: 600px; display: block; font-family: "Raleway", sans-serif; font-size: 0.8rem; padding: 16px 32px; width: auto; background-color: $red; color: $white; border: none; border-bottom: 2px solid $grey; &:hover, &:active {background-color: $darkred; cursor: pointer;}}
-.label-hint p {margin: 0 0 1.3rem 0; font-size: 0.8rem; text-align: center; line-height: 1.6; padding: 0; color: #757575;}
-.center-button {text-align: center;}
-.download {margin-bottom: 2rem; padding: 16px; display: inline-block; background-color: $red; color: $white; font-size: 0.8rem; box-shadow: 1px 1px 1px rgba(13,13,13,0.2); &:hover {background-color: $darkred; color: $white; cursor: pointer; border-color: $grey;}}
-.next-page:hover {background-color: $darkred; color: $white; cursor: pointer; border-color: $grey;}
-.cvcontainer {padding-bottom: 0.5rem; p {padding-bottom: 0;}}
+
+.container {
+	margin: 0 auto; padding: 12px 16px;
+	max-width: 664px;
+	p {
+		padding-bottom: 2rem;
+		line-height: 2;
+	}
+	figure p {
+		margin: 0; padding: 0;
+		font-size: 0.8rem; font-style: italic; line-height: 1.4; text-align: left;
+	}
+}
+
+.social-icon {
+	width: 38px; height: auto;
+	.social-icon-outer {
+		fill: #212121; transition: fill 220ms;
+	}
+	.social-icon-fill {
+		fill: $white;
+	}
+	&:hover .social-icon-outer {
+		fill: #424242; transition: fill 220ms;
+	}
+}
+
+.self-portrait {
+	text-align: center;
+	img {
+		height: auto;
+		width: 100%; max-width: 200px;
+		display: inline-block;
+		text-align: center;
+		border-radius: 50%;
+	}
+}
+.background-img {
+	margin: 0 auto 2rem auto;
+	height: 150px; width: 100%;
+	position: relative;
+	background: no-repeat fixed center center; background-size: cover;
+	box-shadow: 1px 1px 1px rgba(13,13,13,0.4);
+}
+.bg-me {
+	background-image: url(img/bg-me.jpg);
+}
+.bg-contact {
+	background-image: url(img/bg-keyboard.jpg);
+}
+.bg-louvre {
+	background-image: url(img/bg-louvre.jpg);
+}
+.bg-hilton {
+	background-image: url(img/bg-hilton.jpg);
+}
+.bg-mmu {
+	background-image: url(img/bg-mmu.jpg);
+}
+
+.next-page {
+	margin-top: 2rem;
+	display: block;
+	height: 200px;
+	background-color: $red; color: $white;
+	p {
+		padding: 2.5rem 0 0.5rem 0;
+		color: $white; text-align: center; font-style: italic;
+	}
+	&:hover {
+		background-color: $darkred; color: $white; border-color: $grey;
+		cursor: pointer;
+	}
+}
+
+form {
+	text-align: center;
+}
+label {
+	margin: 0 auto 1.2rem auto;
+	width: 75%; max-width: 600px;
+	display: block;
+	font-family: "Raleway", sans-serif;
+}
+input, textarea {
+	margin: 0.5rem auto 2.5rem auto; padding: 0.5rem;
+	width: 75%; max-width: 600px;
+	display: block;
+	font-family: "Raleway", sans-serif; font-size: 0.8rem;
+	border: 1px solid $black;
+	&:focus {
+		background-color: $white; outline: 3px solid $yellow;
+	}
+}
+button {
+	margin: 0.5rem auto 2.5rem auto; padding: 16px 32px;
+	width: 75%; max-width: 200px;
+	display: block;
+	font-family: "Raleway", sans-serif; font-size: 0.8rem;
+	background-color: $red; color: $white;
+	border: none; border-bottom: 2px solid $grey;
+	&:hover, &:active {
+		background-color: $darkred; cursor: pointer;
+	}
+}
+.center-button {
+	text-align: center;
+}
+
+.label-hint p {
+	margin: 0 0 1.3rem 0; padding: 0;
+	font-size: 0.8rem; text-align: center; line-height: 1.6; color: #757575;
+}
+
+@keyframes hover-bob {
+	0% {
+
+	}
+	100% {
+
+	}
+}
+
+.download {
+	margin-bottom: 2rem; padding: 16px;
+	display: inline-block;
+	background-color: $red; color: $white;
+	font-size: 0.8rem;
+	box-shadow: 1px 1px 1px rgba(13,13,13,0.2);
+	&:hover {
+		background-color: $darkred; color: $white; border-color: $grey;
+		cursor: pointer;
+	}
+}
+
+.newdownload {
+	margin-bottom: 2rem; padding: 16px;
+	display: inline-block;
+	font-size: 0.8rem;
+	transition: all 220ms ease-in-out;
+	&:hover {
+		margin-left: -50px;
+		transition: all 220ms ease-in-out;
+	}
+}
+
 @import 'subpages';
 @import 'footer';
+
 @media (min-width: 760px) {
-main {padding-top: 3rem;}
-.container p {font-size: 1.1rem; line-height: 2.2;}
-.background-img {margin: 3rem auto; height: 250px;}
-.nav-ghost {margin: 24px 16px; display: inline-block;}
-.download {padding: 16px 22px; font-size: 1rem; box-shadow: 2px 2px 2px rgba(13,13,13,.2);}
-label {font-size: 1.2rem;}
-input, textarea, button {margin: 1rem auto 2rem auto; font-size: 1rem;}
+	main {
+		padding-top: 3rem;
+	}
+	.container p {
+		font-size: 1.1rem; line-height: 2.2;
+	}
+	.background-img {
+		margin: 3rem auto;
+		height: 250px;
+	}
+	.nav-ghost {
+		margin: 24px 16px;
+		display: inline-block;
+	}
+	.download {
+		padding: 16px 22px;
+		font-size: 1rem;
+		box-shadow: 2px 2px 2px rgba(13,13,13,.2);
+	}
+	label {
+		font-size: 1.2rem;
+	}
+	input, textarea, button {
+		margin: 1rem auto 2rem auto;
+		font-size: 1rem;
+	}
 }
