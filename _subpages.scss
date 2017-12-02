@@ -10,7 +10,7 @@
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	background-color: rgba(1,1,1,0.9); color: $white;
+	background-color: rgba(1,1,1,0.9); color: var(--color-white);
 	transition: background-color 220ms ease-in-out;
 }
 

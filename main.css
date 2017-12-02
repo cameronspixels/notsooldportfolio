@@ -1,7 +1,9 @@
 /* Gives a yellow background to focused elements, as opposed to potentially poor brower defaults */
 :focus {background-color: #FFBF47;}
 
-body {margin: 0; padding: 0; background-color: #FFF; color: #303036; font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif; font-size: 100%; font-weight: 400;}
+:root {--red-color: #F00D2E;)}
+
+body {margin: 0; padding: 0; background-color: var(--red-color); color: #303036; font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif; font-size: 100%; font-weight: 400;}
 
 a {color: #0D0D0D; text-decoration: none; border-bottom: 2px solid #303036;}
 a:hover, a:active {color: #F00D2E; background-color: #FFF; border-color: #F00D2E;}

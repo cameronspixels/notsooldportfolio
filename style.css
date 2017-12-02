@@ -1,23 +1,33 @@
+:root {
+  --color-white: #FFF;
+  --color-grey: #303036;
+  --color-black: #0D0D0D;
+  --color-red: #F00D2E;
+  --color-darkred: #D20D2E;
+  --color-blue: #30bced;
+  --color-darkblue: #1593c1;
+  --color-yellow: #FFBF47; }
+
 :focus {
-  background-color: #FFBF47; }
+  background-color: var(--color-yellow); }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFF;
-  color: #303036;
+  background-color: var(--color-white);
+  color: var(--color-grey);
   font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
   font-size: 100%;
   font-weight: 400; }
 
 a {
-  color: #0D0D0D;
+  color: var(--color-grey);
   text-decoration: none;
-  border-bottom: 2px solid #303036; }
+  border-bottom: 2px solid var(--color-grey); }
   a:hover, a:active {
-    color: #30bced;
-    background-color: #FFF;
-    border-color: #30bced; }
+    color: var(--color-blue);
+    background-color: var(--color-white);
+    border-color: var(--color-blue); }
 
 h1 {
   margin-bottom: 3.3rem;
@@ -33,7 +43,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #FFF;
+  color: var(--color-white);
   font-size: 2.5rem;
   font-weight: 500;
   text-align: center;
@@ -41,13 +51,13 @@ h2 {
 
 h3 {
   margin: 1rem 0 3.3rem 0;
-  color: #F00D2E;
+  color: var(--color-red);
   font-size: 2rem;
   text-align: center; }
 
 h5 {
   margin-top: 2rem;
-  color: #FFF;
+  color: var(--color-white);
   font-size: 2rem;
   font-weight: 500;
   text-align: center; }
@@ -160,18 +170,18 @@ h5 {
     padding: 32px 0px;
     width: 100%;
     display: block;
-    color: #FFF;
+    color: var(--color-white);
     text-indent: 64px;
     text-decoration: none;
     border: none; }
     .primary-nav a:hover, .primary-nav a:active {
-      color: #F00D2E; }
+      color: var(--color-red); }
   .primary-nav .handle {
     padding: 20px 20px;
     width: calc(100% - 40px);
     z-index: 3;
     background: none;
-    color: #0D0D0D;
+    color: var(--color-black);
     text-align: right; }
     .primary-nav .handle:hover {
       cursor: pointer; }
@@ -179,7 +189,7 @@ h5 {
     display: none; }
 
 .active {
-  color: #FFF; }
+  color: var(--color-white); }
 
 #openMenu:target .handle--close {
   display: inline-block;
@@ -189,7 +199,7 @@ h5 {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #FFF; }
+  color: var(--color-white); }
 #openMenu:target ul {
   height: 100vh;
   opacity: 1; }
@@ -217,17 +227,17 @@ h5 {
     margin: 0 10px;
     padding: 20px 0;
     width: 160px;
-    color: #303036;
+    color: var(--color-grey);
     text-align: center;
     text-indent: 0; }
     .primary-nav a:hover {
-      color: #303036;
-      border-bottom: 2px solid #F00D2E; }
+      color: var(--color-grey);
+      border-bottom: 2px solid var(--color-red); }
   .primary-nav .handle {
     display: none; }
   .primary-nav .active {
-    color: #303036;
-    border-bottom: 2px solid #F00D2E; } }
+    color: var(--color-grey);
+    border-bottom: 2px solid var(--color-red); } }
 .container {
   margin: 0 auto;
   padding: 12px 16px;
@@ -250,7 +260,7 @@ h5 {
     fill: #212121;
     transition: fill 220ms; }
   .social-icon .social-icon-fill {
-    fill: #FFF; }
+    fill: var(--color-white); }
   .social-icon:hover .social-icon-outer {
     fill: #424242;
     transition: fill 220ms; }
@@ -293,17 +303,17 @@ h5 {
   margin-top: 2rem;
   display: block;
   height: 200px;
-  background-color: #F00D2E;
-  color: #FFF; }
+  background-color: var(--color-red);
+  color: var(--color-white); }
   .next-page p {
     padding: 2.5rem 0 0.5rem 0;
-    color: #FFF;
+    color: var(--color-white);
     text-align: center;
     font-style: italic; }
   .next-page:hover {
-    background-color: #D20D2E;
-    color: #FFF;
-    border-color: #303036;
+    background-color: var(--color-darkred);
+    color: var(--color-white);
+    border-color: var(--color-grey);
     cursor: pointer; }
 
 form {
@@ -324,10 +334,10 @@ input, textarea {
   display: block;
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
-  border: 1px solid #0D0D0D; }
+  border: 1px solid var(--color-grey); }
   input:focus, textarea:focus {
-    background-color: #FFF;
-    outline: 3px solid #FFBF47; }
+    background-color: var(--color-white);
+    outline: 3px solid var(--color-yellow); }
 
 button {
   margin: 0.5rem auto 2.5rem auto;
@@ -337,12 +347,12 @@ button {
   display: block;
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
-  background-color: #F00D2E;
-  color: #FFF;
+  background-color: var(--color-red);
+  color: var(--color-white);
   border: none;
-  border-bottom: 2px solid #303036; }
+  border-bottom: 2px solid var(--color-grey); }
   button:hover, button:active {
-    background-color: #D20D2E;
+    background-color: var(--color-darkred);
     cursor: pointer; }
 
 .center-button {
@@ -360,14 +370,14 @@ button {
   margin-bottom: 2rem;
   padding: 16px;
   display: inline-block;
-  background-color: #F00D2E;
-  color: #FFF;
+  background-color: var(--color-red);
+  color: var(--color-white);
   font-size: 0.8rem;
   box-shadow: 1px 1px 1px rgba(13, 13, 13, 0.2); }
   .download:hover {
-    background-color: #D20D2E;
-    color: #FFF;
-    border-color: #303036;
+    background-color: var(--color-darkred);
+    color: var(--color-white);
+    border-color: var(--color-grey);
     cursor: pointer; }
 
 .newdownload {
@@ -392,7 +402,7 @@ button {
   position: absolute;
   bottom: 0;
   background-color: rgba(1, 1, 1, 0.9);
-  color: #FFF;
+  color: var(--color-white);
   transition: background-color 220ms ease-in-out; }
 
 .port-web {
@@ -458,16 +468,16 @@ figure {
 .primary-footer {
   padding: 1rem 0 2.2rem 0;
   width: 100%;
-  background-color: #303036;
-  color: #FFF;
-  border-color: #FFF; }
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  border-color: var(--color-white); }
   .primary-footer a {
-    color: #FFF;
-    border-color: #FFF; }
+    color: var(--color-white);
+    border-color: var(--color-white); }
     .primary-footer a:hover, .primary-footer a:active {
-      color: #30bced;
-      background-color: #303036;
-      border-color: #30bced; }
+      color: var(--color-blue);
+      background-color: var(--color-grey);
+      border-color: var(--color-blue); }
   .primary-footer .footer-container {
     margin: 0 auto;
     padding: 12px 32px;

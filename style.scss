@@ -1,24 +1,29 @@
-$black: #0D0D0D; $grey: #303036;
-$white: #FFF;
-$red: #F00D2E; $darkred: #D20D2E;
-$blue: #30bced; $blueisdark: #1593c1;
-$yellow: #FFBF47;
+:root {
+	--color-white: #FFF;
+	--color-grey: #303036;
+	--color-black: #0D0D0D;
+	--color-red: #F00D2E;
+	--color-darkred: #D20D2E;
+	--color-blue: #30bced;
+	--color-darkblue: #1593c1;
+	--color-yellow: #FFBF47;
+}
 
 :focus {
-	background-color: $yellow;
+	background-color: var(--color-yellow);
 }
 
 body {
 	margin: 0; padding: 0;
-	background-color: $white; color: $grey;
+	background-color: var(--color-white); color: var(--color-grey);
 	font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif; font-size: 100%; font-weight: 400;
 }
 a {
-	color: $black;
+	color: var(--color-grey);
 	text-decoration: none;
-	border-bottom: 2px solid $grey;
+	border-bottom: 2px solid var(--color-grey);
 	&:hover, &:active {
-		color: $blue; background-color: $white; border-color: $blue;
+		color: var(--color-blue); background-color: var(--color-white); border-color: var(--color-blue);
 	}
 }
 
@@ -31,17 +36,17 @@ h2 {
 	width: 100%;
 	position: absolute;
 	top: 50%; left: 50%; transform: translate(-50%, -50%);
-	color: $white;
+	color: var(--color-white);
 	font-size: 2.5rem; font-weight: 500; text-align: center; text-shadow: 0px 1px rgba(13,13,13,0.4);
 }
 h3 {
 	margin: 1rem 0 3.3rem 0;
-	color: $red;
+	color: var(--color-red);
 	font-size: 2rem; text-align: center;
 }
 h5 {
 	margin-top: 2rem;
-	color: $white;
+	color: var(--color-white);
 	font-size: 2rem; font-weight: 500; text-align: center;
 }
 
@@ -67,7 +72,7 @@ h5 {
 		fill: #212121; transition: fill 220ms;
 	}
 	.social-icon-fill {
-		fill: $white;
+		fill: var(--color-white);
 	}
 	&:hover .social-icon-outer {
 		fill: #424242; transition: fill 220ms;
@@ -111,13 +116,13 @@ h5 {
 	margin-top: 2rem;
 	display: block;
 	height: 200px;
-	background-color: $red; color: $white;
+	background-color: var(--color-red); color: var(--color-white);
 	p {
 		padding: 2.5rem 0 0.5rem 0;
-		color: $white; text-align: center; font-style: italic;
+		color: var(--color-white); text-align: center; font-style: italic;
 	}
 	&:hover {
-		background-color: $darkred; color: $white; border-color: $grey;
+		background-color: var(--color-darkred); color: var(--color-white); border-color: var(--color-grey);
 		cursor: pointer;
 	}
 }
@@ -136,9 +141,9 @@ input, textarea {
 	width: 75%; max-width: 600px;
 	display: block;
 	font-family: "Raleway", sans-serif; font-size: 0.8rem;
-	border: 1px solid $black;
+	border: 1px solid var(--color-grey);
 	&:focus {
-		background-color: $white; outline: 3px solid $yellow;
+		background-color: var(--color-white); outline: 3px solid var(--color-yellow);
 	}
 }
 button {
@@ -146,10 +151,10 @@ button {
 	width: 75%; max-width: 200px;
 	display: block;
 	font-family: "Raleway", sans-serif; font-size: 0.8rem;
-	background-color: $red; color: $white;
-	border: none; border-bottom: 2px solid $grey;
+	background-color: var(--color-red); color: var(--color-white);
+	border: none; border-bottom: 2px solid var(--color-grey);
 	&:hover, &:active {
-		background-color: $darkred; cursor: pointer;
+		background-color: var(--color-darkred); cursor: pointer;
 	}
 }
 .center-button {
@@ -173,11 +178,11 @@ button {
 .download {
 	margin-bottom: 2rem; padding: 16px;
 	display: inline-block;
-	background-color: $red; color: $white;
+	background-color: var(--color-red); color: var(--color-white);
 	font-size: 0.8rem;
 	box-shadow: 1px 1px 1px rgba(13,13,13,0.2);
 	&:hover {
-		background-color: $darkred; color: $white; border-color: $grey;
+		background-color: var(--color-darkred); color: var(--color-white); border-color: var(--color-grey);
 		cursor: pointer;
 	}
 }

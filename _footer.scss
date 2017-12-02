@@ -1,11 +1,11 @@
 .primary-footer {
 	padding: 1rem 0 2.2rem 0;
 	width: 100%;
-	background-color: $grey; color: $white; border-color: $white;
+	background-color: var(--color-grey); color: var(--color-white); border-color: var(--color-white);
 	a {
-		color: $white; border-color: $white;
+		color: var(--color-white); border-color: var(--color-white);
 		&:hover, &:active {
-			color: $blue; background-color: $grey; border-color: $blue;
+			color: var(--color-blue); background-color: var(--color-grey); border-color: var(--color-blue);
 		}
 	}
 	.footer-container {
