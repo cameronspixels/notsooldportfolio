@@ -1,4 +1,4 @@
-.primary-nav {
+.nav--primary {
 	grid-row: 1/6; grid-column: 1/6;
 	ul {
 		margin: 0;
@@ -41,7 +41,7 @@
 	}
 }
 
-.active {
+.active a {
 	color: var(--color-white);
 }
 #openMenu:target {
@@ -69,7 +69,7 @@
 }
 
 @media (min-width: 760px) {
-	.primary-nav {
+	.nav--primary {
 		ul {
 			padding: 0;
 			height: auto;
@@ -90,12 +90,13 @@
 			&:hover {
 				color: var(--color-grey);
 				border-bottom: 2px solid var(--color-red);
+				background: none;
 			}
 		}
 		.handle {
 			display: none;
 		}
-		.active {
+		.active a {
 			color: var(--color-grey); border-bottom: 2px solid var(--color-red);
 		}
 	}

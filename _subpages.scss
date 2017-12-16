@@ -56,30 +56,30 @@ h4 {
 	}
 }
 
-.blog-contents {
+.contents--blog {
 	padding: 1rem 0;
 	text-align: center;
-	li {
+	.contents--blog--list {
 		margin: 1.5rem 0;
 		display: block;
 	}
-	a {
+	.contents--blog--link {
 		width: 100%;
 	}
 }
 
-figure {
+.blog--figure {
 	margin: 0 auto; padding-bottom: 2rem;
 	max-width: 540px;
-	img {
+	.blog--figure--image {
 		width: 100%;
 	}
 }
 
 @media (min-width: 760px) {
-	.blog-contents li {
-		margin: 1.5rem 1.5rem;
-		display: inline-block;
+	.contents--blog .contents--blog--list {
+			margin: 1.5rem 1.5rem;
+			display: inline-block;
 	}
 	.bg-student-survival-guide {
 		background-image: url(img/ssg-desktop.jpg);

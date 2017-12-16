@@ -2,19 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Cameron Barnes | Front-End Developer &amp; Final-Year Student</title> 
-    <meta name="description" content="Front-end website developer &amp; final year Web Development student in Manchester, UK.">
-    <meta name="keywords" content="cameron barnes, cameronspixels, web, front-end, dev, developer, front-end developer, web development student, front-end development, website development">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@cameronspixels">
-    <meta name="twitter:creator" content="@cameronspixels">
-    <meta name="twitter:url" content="https://cameronspixels.co.uk/index.html/">
-    <meta name="twitter:title" content="Cameron Barnes | Front-End Developer &amp; Final-Year Student">
-    <meta name="twitter:description" content="Front-end website developer &amp; final year Web Development student in Manchester, UK.">
-    <meta name="twitter:image" content="http://www.15075407.webdevmmu.uk/newnew/img/bg-red.jpg">
+    <!-- Meta Tags -->
+    <meta name="description" content="Front-end website developer &amp; final year Web Development student in Manchester, UK." />
+    <meta name="keywords" content="cameron barnes, cameronspixels, web, front-end, dev, developer, front-end developer, web development student, front-end development, website development" />
+    <meta name="canocial" content="http://www.cameronspixels.co.uk/" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@cameronspixels" />
+    <meta name="twitter:creator" content="@cameronspixels" />
+    <meta name="twitter:url" content="https://cameronspixels.co.uk/index.html/" />
+    <meta name="twitter:title" content="Cameron Barnes | Front-End Developer &amp; Final-Year Student" />
+    <meta name="twitter:description" content="Front-end website developer &amp; final year Web Development student in Manchester, UK." />
+    <meta name="twitter:image" content="http://www.15075407.webdevmmu.uk/newnew/img/bg-red.jpg" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet" />
     <script>
@@ -27,28 +29,28 @@
     </script>
   </head>
   <body id="top">
-  	<header class="primary-header" id="openMenu">
-  		<nav class="primary-nav">
+  	<header class="header--primary" id="openMenu">
+  		<nav class="nav--primary">
         <a href="#openMenu" class="handle handle--open" title="Open mobile menu">Menu</a>
         <a href="#" class="handle handle--close" title="Close mobile menu">Menu</a>
   			<ul>
-          <li><a class="active" href="index.html" title="Homepage">Home</a></li>          
+          <li class="active"><a href="index.html" title="Homepage">Home</a></li>          
           <li><a href="portfolio-cv.html" title="Portfolio and cirriculum vitae">Portfolio and CV</a></li>
           <li><a href="blog.html" title="Blog">Blog</a></li>
           <li><a href="#contact" title="Contact me">Contact Me</a></li>
 	 			</ul>
   		</nav>
-  		<section class="container fade">
+  		<section class="header--primary--content container fade">
         <a class="skiplink" href="#content" title="Skip to main content">Skip to main content</a>
   			<h1>Cameron Barnes</h1>
   			<p>I'm a front-end website developer and final year Web Development student.</p>
-        <a class="download" href="#content" title="Go to main content">See What I Do</a>
+        <a class="button--primary button--header" href="#content" title="Go to main content">See What I Do</a>
   		</section>
       <svg class="arrow fade" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>Arrow to content</title><a href="#content"><g><polygon class="social-icon-outer" points="29.998,16 22,16 22,2 9.999,2 9.999,16 1.999,16 15.999,30"/></g></a></svg>
   	</header>
   	<main id="content">
   		<section>
-        <div class="background-img bg-me"><h2>A Bit About Me</h2></div>
+        <div class="background--img bg-me"><h2>A Bit About Me</h2></div>
         <div class="container">
           <p>Hi, I'm a 20-year-old student living in a flat Manchester. I'm in the final year of my Web Development degree and have aspirations to move into front-end website development.</p>
           <figure class="self-portrait">
@@ -61,7 +63,7 @@
         </div>
   		</section>
       <section id="contact">
-        <div class="background-img bg-contact"><h2>Get In Touch</h2></div>
+        <div class="background--img bg-contact"><h2>Get In Touch</h2></div>
         <div class="container">
           <form method="POST" action="http://formspree.io/cameronspixels@gmail.com">
             <input type="hidden" name="_format" value="plain">
@@ -96,8 +98,8 @@
         <h5>Portfolio and CV</h5>
       </a>
   	</main>
-  	<footer class="primary-footer">
-      <div class="footer-container">
+  	<footer class="footer--primary">
+      <div class="footer--container">
   		  <p>Designed and developed by <a href="http://www.cameronspixels.co.uk/" title="Cameron Barnes' website">Cameron Barnes</a>.</p>
         <ul class="footer-nav">
           <li><a href="index.html" title="Homepage">Home</a></li>
@@ -105,8 +107,8 @@
           <li><a href="blog.html" title="Blog">Blog</a></li>
           <li><a href="#contact" title="Contact me">Contact Me</a></li>
         </ul>
-        <ul class="footer-social">
-          <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+        <ul class="footer--social">
+          <li><svg class="icon--social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Twitter</title>
             <a href="http://www.twitter.com/cameronspixels/">
               <g>
@@ -122,7 +124,7 @@
               </g>
             </a>
           </svg></li>
-          <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+          <li><svg class="icon--social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Instagram</title>
             <a href="http://www.instagram.com/cameronspixels_/">
               <g>
@@ -135,7 +137,7 @@
               </g>
             </a>
           </svg></li>
-          <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+          <li><svg class="icon--social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Linkedin</title>
             <a href="http://www.linkedin.com/in/cameron-barnes/">
               <g>

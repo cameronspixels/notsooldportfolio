@@ -28,32 +28,32 @@
     </script>
   </head>
   <body id="top">
-  	<header class="primary-header" id="openMenu">
-  		<nav class="primary-nav">
+  	<header class="header--primary" id="openMenu">
+  		<nav class="nav--primary">
         <a href="#openMenu" class="handle handle--open" title="Open mobile menu">Menu</a>
         <a href="#" class="handle handle--close" title="Close mobile menu">Menu</a>
   			<ul>
           <li><a href="index.html" title="Homepage">Home</a></li>          
   				<li><a href="portfolio-cv.html" title="Portfolio and curriculum vitae">Portfolio and CV</a></li>
-  				<li><a class="active" href="blog.html" title="Blog">Blog</a></li>
+  				<li class="active"><a href="blog.html" title="Blog">Blog</a></li>
   				<li><a href="index.html#contact" title="Contact me">Contact Me</a></li>
 	 			</ul>
   		</nav>
-  		<section class="container fade">
+  		<section class="header--primary--content container fade">
         <a class="skiplink" href="#content" title="Skip to main content">Skip to main content</a>
   			<h1>Blog</h1>
   			<p>Rambling, rambling and more rambling.</p>
-        <a class="download" href="#content" title="Go to main content">Reading is good for the brain</a>
+        <a class="button--primary button--header button--blog" href="#content" title="Go to main content">Reading is good for the brain</a>
   		</section>
       <svg class="arrow fade" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>Arrow to content</title><a href="#content"><g><polygon class="social-icon-outer" points="29.998,16 22,16 22,2 9.999,2 9.999,16 1.999,16 15.999,30"/></g></a></svg>
   	</header>
   	<main id="content">
   		<section>
-        <div class="background-img bg-louvre"><h2>Contents</h2></div>
-        <ul class="container blog-contents">
-          <li><a href="blog.html#the-industry" title="">The Industry</a></li>
-          <li><a href="blog-building-the-site.html#building-the-site" title="">Building The Site</a></li>
-          <li><a href="#optimisation-seo" title="">Optimisation &amp; SEO</a></li>
+        <div class="background--img bg-louvre"><h2>Contents</h2></div>
+        <ul class="container contents--blog">
+          <li class="contents--blog--list"><a class="contents--blog--link" href="blog.html#the-industry" title="The Industry Blog Post">The Industry</a></li>
+          <li class="contents--blog--list"><a class="contents--blog--link" href="blog-building-the-site.html#building-the-site" title="Building The Site Blog Post">Building The Site</a></li>
+          <li class="contents--blog--list"><a class="contents--blog--link" href="#optimisation-seo" title="Optimisation and SEO Blog Post">Optimisation &amp; SEO</a></li>
         </ul>
       </section>
       <section id="optimisation-seo" class="container blog">
@@ -64,8 +64,8 @@
         <p>There are a few things that stood out to me about reading these and implementing SEO into this portfolio. First is the lack of importance given to meta tags now. If three things were to be highlighted as crucial to search engine performance, you’d go for the &lt;title&gt;, &lt;meta&gt; description, and the body’s &lt;h1&gt; element.</p>
         <p>Keywords, given the nature of them being easy to essentially spam and abuse, are almost <a href="http://www.wordstream.com/meta-tags" title="Wordstream meta tags guide">entirely disregarded by major search engines like Google</a>. I can appreciate the fact that prominence is given to meaningful, well-written titles and descriptions as opposed a series of jumbled, potentially meaningless keywords.</p>
         <p>I’d also highlight <a href="https://developers.facebook.com/docs/sharing/webmasters/" title="Facebook's page for website developers">Facebook’s OpenGraph</a> and <a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started" title="Twitter's page for website developers">Twitter’s Cards</a>. Including these within your the head of your website allow you to control how the website is presented when linked across the web.</p>
-        <figure>
-          <img src="img/twitter-cards.jpg" alt="Twitter's Card metadata">
+        <figure class="blog--figure">
+          <img class="blog--figure--image" src="img/twitter-cards.jpg" alt="Twitter's Card metadata">
           <figcaption>
             <p>My implementation of Twitter's metadata.</p>
           </figcaption>
@@ -73,8 +73,8 @@
         <p>There's an argument to be made from an analytical standpoint that while you could just leave websites to read your default titles and descriptions, it would be wise to manipulate how social sites present them. There <i>could</i> well be benefit to snappier, more to-the-point content given the fast, nonchalant nature of social media.</p>
         <p>In terms of other optimisations, I’ve also made attempts to condense my media as best as I can. I’ve often neglected image size and how long it’ll take for a user to download. We naturally design for ourselves, and when we’re on fast connection, it’s often hard to notice those who aren’t.</p>
         <p>Where my previous attempts left my background images at around 250KB, even through using <a href="https://developers.google.com/speed/pagespeed/insights/" title="Google's website Speed Insights">Google’s Speed Insights</a> which provides optimisation for you, this time around I’ve used Photoshop to control both the size and quality of JPEGs. I’ve made attempts to keep all images under 50KB, and where possible, keep most closer to 25KB.</p>
-        <figure>
-          <img src="img/inline-svg.jpg" alt="Inline SVG implementation">
+        <figure class="blog--figure">
+          <img class="blog--figure--image" src="img/inline-svg.jpg" alt="Inline SVG implementation">
           <figcaption>
             <p>My use of inline SVGs in social icons.</p>
           </figcaption>
@@ -87,8 +87,8 @@
         <h5>Contact Me</h5>
       </a>
   	</main>
-    <footer class="primary-footer">
-      <div class="footer-container">
+    <footer class="footer--primary">
+      <div class="footer--container">
         <p>Designed and developed by <a href="http://www.cameronspixels.co.uk/" title="Cameron Barnes' website">Cameron Barnes</a>.</p>
         <ul class="footer-nav">
           <li><a href="index.html" title="Homepage">Home</a></li>
@@ -96,8 +96,8 @@
           <li><a href="blog.html" title="Blog">Blog</a></li>
           <li><a href="index.html#contact" title="Contact me">Contact Me</a></li>
         </ul>
-        <ul class="footer-social">
-          <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+        <ul class="footer--social">
+          <li><svg class="icon--social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Twitter</title>
             <a href="http://www.twitter.com/cameronspixels/">
               <g>
@@ -113,7 +113,7 @@
               </g>
             </a>
           </svg></li>
-          <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+          <li><svg class="icon--social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Instagram</title>
             <a href="http://www.instagram.com/cameronspixels_/">
               <g>
@@ -126,7 +126,7 @@
               </g>
             </a>
           </svg></li>
-          <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+          <li><svg class="icon--social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Linkedin</title>
             <a href="http://www.linkedin.com/in/cameron-barnes/">
               <g>

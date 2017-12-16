@@ -1,3 +1,7 @@
+// To Do:
+// Write include for font family.
+// Apply include for font family across anywhere that needs it. 
+
 :root {
 	--color-white: #FFF;
 	--color-grey: #303036;
@@ -66,7 +70,7 @@ h5 {
 	}
 }
 
-.social-icon {
+.icon--social {
 	width: 38px; height: auto;
 	.social-icon-outer {
 		fill: #212121; transition: fill 220ms;
@@ -74,8 +78,11 @@ h5 {
 	.social-icon-fill {
 		fill: var(--color-white);
 	}
-	&:hover .social-icon-outer {
-		fill: #424242; transition: fill 220ms;
+	&:hover {
+		cursor: pointer;
+		.social-icon-outer {
+			fill: #424242; transition: fill 220ms;
+		}
 	}
 }
 
@@ -89,7 +96,7 @@ h5 {
 		border-radius: 50%;
 	}
 }
-.background-img {
+.background--img {
 	margin: 0 auto 2rem auto;
 	height: 150px; width: 100%;
 	position: relative;
@@ -166,16 +173,7 @@ button {
 	font-size: 0.8rem; text-align: center; line-height: 1.6; color: #757575;
 }
 
-@keyframes hover-bob {
-	0% {
-
-	}
-	100% {
-
-	}
-}
-
-.download {
+.button--primary {
 	margin-bottom: 2rem; padding: 16px;
 	display: inline-block;
 	background-color: var(--color-red); color: var(--color-white);
@@ -202,15 +200,12 @@ button {
 @import 'footer';
 
 @media (min-width: 760px) {
-	main {
-		padding-top: 3rem;
-	}
 	.container p {
 		font-size: 1.1rem; line-height: 2.2;
 	}
-	.background-img {
-		margin: 3rem auto;
-		height: 250px;
+	.background--img {
+		margin: 0 auto 3rem auto;
+		height: 200px;
 	}
 	.nav-ghost {
 		margin: 24px 16px;

@@ -28,55 +28,55 @@
     </script>
   </head>
   <body id="top">
-  	<header class="primary-header" id="openMenu">
-  		<nav class="primary-nav">
+  	<header class="header--primary" id="openMenu">
+  		<nav class="nav--primary">
         <a href="#openMenu" class="handle handle--open" title="Open mobile menu">Menu</a>
         <a href="#" class="handle handle--close" title="Close mobile menu">Menu</a>
   			<ul>
           <li><a href="index.html" title="Homepage">Home</a></li>          
   				<li><a href="portfolio-cv.html" title="Portfolio and curriculum vitae">Portfolio and CV</a></li>
-  				<li><a class="active" href="blog.html" title="Blog">Blog</a></li>
+  				<li class="active"><a href="blog.html" title="Blog">Blog</a></li>
   				<li><a href="index.html#contact" title="Contact me">Contact Me</a></li>
 	 			</ul>
   		</nav>
-  		<section class="container fade">
+  		<section class="header--primary--content container fade">
         <a class="skiplink" href="#content" title="Skip to main content">Skip to main content</a>
   			<h1>Blog</h1>
   			<p>Rambling, rambling and more rambling.</p>
-        <a class="download" href="#content" title="Go to main content">Reading is good for the brain</a>
+        <a class="button--primary button--header button--blog" href="#content" title="Go to main content">Reading is good for the brain</a>
   		</section>
       <svg class="arrow fade" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>Arrow to content</title><a href="#content"><g><polygon class="social-icon-outer" points="29.998,16 22,16 22,2 9.999,2 9.999,16 1.999,16 15.999,30"/></g></a></svg>
   	</header>
   	<main id="content">
   		<section>
-        <div class="background-img bg-louvre"><h2>Contents</h2></div>
-        <ul class="container blog-contents">
-          <li><a href="blog.html#the-industry" title="">The Industry</a></li>
-          <li><a href="#building-the-site" title="">Building The Site</a></li>
-          <li><a href="blog-optimisation-seo.html#optimisation-seo" title="">Optimisation &amp; SEO</a></li>
+        <div class="background--img bg-louvre"><h2>Contents</h2></div>
+        <ul class="container contents--blog">
+          <li class="contents--blog--list"><a class="contents--blog--link" href="blog.html#the-industry" title="The Industry Blog Post">The Industry</a></li>
+          <li class="contents--blog--list"><a class="contents--blog--link" href="#building-the-site" title="Building the Site Blog Post">Building The Site</a></li>
+          <li class="contents--blog--list"><a class="contents--blog--link" href="blog-optimisation-seo.html#optimisation-seo" title="Optimisation and SEO Blog Post">Optimisation &amp; SEO</a></li>
         </ul>
       </section>
       <section id="building-the-site" class="container blog">
         <h3>Building the Site</h3>
         <p>As I’d imagine most students might go, previous iterations of my portfolio send shudders down my spine. I felt that poor design and development decisions couldn’t just be a lack of knowledge though, and a lot of people in industry put empathises on planning - and you could include in that wireframing, prototyping, sticking post-it notes everywhere. It’s most of the time the case that, if you’re to put a student website amongst a number of (even junior) professionals', it’ll stick out like a sore thumb. While I’d argue that my latest effort wasn’t <i>so</i> bad, there were still a lot of things that I’d look at and not think twice about discarding.</p>
         <p>As such, I went researching. As much as I could look at a professional portfolio and know that it’s a step up, I didn’t know why. As well as taking a look at some past MMU graduate’s sites while they were still linked to, I Googled for some good examples of portfolios in my sort of area - returning some good ones like <a href="https://ianlunn.co.uk/" title="Ian Lunn's web portfolio">Ian Lunn</a>, <a href="http://mattfarley.ca/" title="Matt Farley's web portfolio">Matt Farley</a> and <a href="http://www.emilyridge.ie/" title="Emily Ridge's web portfolio">Emily Ridge</a>. These were the ones that I thought were the <i>best</i> examples at least, with aspects and elements which I deemed attainable to my level.</p>
-        <figure>
-          <img src="img/mobile-wireframe.jpg" alt="My initial mobile wireframe">
+        <figure class="blog--figure">
+          <img class="blog--figure--image" src="img/mobile-wireframe.jpg" alt="My initial mobile wireframe">
           <figcaption>
             <p>My initial wireframe designs for mobile.</p>
           </figcaption>
         </figure>
         <p>My research returned staples like big buttons position front and center, serving as call-to-actions, and a natural progression through the site (often through links at the end of pages). Icons were also a big thing - visual indicators accompanying text, as opposed to just text alone; I was beginning to see that everywhere. The Nielsen Norman Group wrote an <a href="https://www.nngroup.com/articles/icon-usability/" title="NN Group artcile on icons">article on icons on the web</a>, which highlights why I really love seeing them - they're (in most cases) universally recognisable, easy targets that immediately resonate with the user - as opposed to plain text, where the context isn't always there straight away.</p>
-        <figure>
-          <img src="img/icons.jpg" alt="Icons used on the web">
+        <figure class="blog--figure">
+          <img class="blog--figure--image" src="img/icons.jpg" alt="Icons used on the web">
           <figcaption>
             <p>An example on <a href="http://mattfarley.ca/" title="Matt Farley's web portfolio">mattfarley.ca</a> of icons being used on the web.</p>
           </figcaption>
         </figure>
         <p>A theme that I saw occasionally and despised was almost anything that hides content or presents an extra step in order to access it. I’ve no affinity whatsoever towards a carousel of images, and hamburger menus on desktop are a long time pet hate. Hidden navigation (and other content) is useful where you can’t appropriately fit content into a viewport - but where you can, and you make the choice to still hide content, it’s even <a href="https://www.nngroup.com/articles/hamburger-menus/" title="NN Group article on menu usability">proven to be much less effective</a>. <a href="https://caferati.me/" title="Rafael Caferati's web portfolio">Rafael Caferati’s portfolio</a>, whilst stunning technically, made me give up after clicking right on the carousel just once.</p>
         <p>While building the portfolio, one of the technologies that I came across which I’m yet to use is CSS Grids. Hearing that it’s the next best thing, I took to reading into it.  I first came across a CSS Tricks article detailing <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" title="CSS Tricks article on grid">everything that you’d need to start with grid</a>, and following reference from that article, I also picked up a copy of Rachael Andrews’ <a href="https://abookapart.com/products/get-ready-for-css-grid-layout" title="Rachael Andrews' Get Ready for CSS Grid Layout">‘Get Ready for CSS Grid Layout’</a>. It's considered one of the best ways to go about layout in the future, once compatibility is across the board <a href="https://caniuse.com/#feat=css-grid" title="CSS Grids compatibility">(it's almost there!)</a>. Grids remove the need for hacked together methods of positioning elements, which were never made for positioning entire pages in the first place (the likes of floats and to a degree, even positioning like absolute) and present a method that's much easier to control from a CSS point of view.</p>
-        <figure>
-          <img src="img/cssgrids.jpg" alt="CSS Grids compatibility">
+        <figure class="blog--figure">
+          <img class="blog--figure--image" src="img/cssgrids.jpg" alt="CSS Grids compatibility">
           <figcaption>
             <p>CSS Grids are almost compatible across the board, as shown by <a href="https://caniuse.com/#feat=css-grid" title="CSS grids compatibility">caniuse.com</a></p>
           </figcaption>
@@ -91,8 +91,8 @@
         <h5>Contact Me</h5>
       </a>
   	</main>
-    <footer class="primary-footer">
-      <div class="footer-container">
+    <footer class="footer--primary">
+      <div class="footer--container">
         <p>Designed and developed by <a href="http://www.cameronspixels.co.uk/" title="Cameron Barnes' website">Cameron Barnes</a>.</p>
         <ul class="footer-nav">
           <li><a href="index.html" title="Homepage">Home</a></li>
@@ -100,8 +100,8 @@
           <li><a href="blog.html" title="Blog">Blog</a></li>
           <li><a href="index.html#contact" title="Contact me">Contact Me</a></li>
         </ul>
-        <ul class="footer-social">
-          <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+        <ul class="footer--social">
+          <li><svg class="icon--social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Twitter</title>
             <a href="http://www.twitter.com/cameronspixels/">
               <g>
@@ -117,7 +117,7 @@
               </g>
             </a>
           </svg></li>
-          <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+          <li><svg class="icon--social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Instagram</title>
             <a href="http://www.instagram.com/cameronspixels_/">
               <g>
@@ -130,7 +130,7 @@
               </g>
             </a>
           </svg></li>
-          <li><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+          <li><svg class="icon--social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
             <title>Cameron's Linkedin</title>
             <a href="http://www.linkedin.com/in/cameron-barnes/">
               <g>

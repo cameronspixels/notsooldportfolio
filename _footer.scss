@@ -1,4 +1,4 @@
-.primary-footer {
+.footer--primary {
 	padding: 1rem 0 2.2rem 0;
 	width: 100%;
 	background-color: var(--color-grey); color: var(--color-white); border-color: var(--color-white);
@@ -8,14 +8,14 @@
 			color: var(--color-blue); background-color: var(--color-grey); border-color: var(--color-blue);
 		}
 	}
-	.footer-container {
+	.footer--container {
 		margin: 0 auto;
 		padding: 12px 32px;
 		max-width: 640px;
 	}
 	p {
 		padding-bottom: 1rem;
-		line-height: 1.2;
+		line-height: 1.5;
 	}
 	ul {
 		margin: 0; padding: 0 0 2rem 16px;
@@ -26,7 +26,7 @@
 	}
 }
 
-.footer-social {
+.footer--social {
 	padding: 0 0 16px 16px;
 	li {
 		display: inline-block;
@@ -40,7 +40,7 @@
 }
 
 @media (min-width: 760px) {
-	.primary-footer {
+	.footer--primary {
 		padding: 2.5rem 0 3.7rem 0;
 	}
 }
