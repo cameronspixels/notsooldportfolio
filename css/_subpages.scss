@@ -44,11 +44,11 @@ h4 {
 	line-height: 1.6;
 }
 
-.blog {
-	p:first-of-type {
+.container--blog {
+	.blog--text:first-of-type {
 		text-indent: 2rem;
 	}
-	p {
+	.blog--text {
 		font-family: 'Lora', serif;
 	}
 	h3 {
@@ -77,6 +77,12 @@ h4 {
 }
 
 @media (min-width: 760px) {
+	.blog--text {
+		transform: translateX(-60px);
+	}
+	.blog--figure {
+		transform: translateX(-30px);
+	}
 	.contents--blog .contents--blog--list {
 			margin: 1.5rem 1.5rem;
 			display: inline-block;

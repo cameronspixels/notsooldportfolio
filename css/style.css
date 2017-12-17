@@ -79,7 +79,8 @@ h5 {
     width: 160px;
     text-align: left;
     transition: all 330ms ease-in-out 330ms;
-    border-radius: 2px; }
+    border-radius: 2px;
+    animation: drop-up 660ms 1 ease-in; }
     .header--primary .button--header:after {
       content: '>';
       text-align: right;
@@ -127,6 +128,11 @@ h5 {
     transform: translateY(-30px); }
   100% {
     transform: translateY(0px); } }
+@keyframes drop-up {
+  0% {
+    transform: translateY(15px); }
+  100% {
+    transform: translateY(0px); } }
 @keyframes hovering {
   0% {
     transform: translateY(0px); }
@@ -147,9 +153,13 @@ h5 {
     grid-column: 2/3;
     grid-row: 3/4;
     align-self: center; }
+  .header--primary .button--blog {
+    width: 260px; }
+    .header--primary .button--blog:hover {
+      width: 280px; }
 
   .arrow {
-    grid-row-start: 4; } }
+    grid-row-start: 5; } }
 .nav--primary {
   grid-row: 1/6;
   grid-column: 1/6; }
@@ -272,9 +282,9 @@ h5 {
       fill: #424242;
       transition: fill 220ms; }
 
-.self-portrait {
+.figure--circle {
   text-align: center; }
-  .self-portrait img {
+  .figure--circle img {
     height: auto;
     width: 100%;
     max-width: 200px;
@@ -362,7 +372,7 @@ button {
     background-color: var(--color-darkred);
     cursor: pointer; }
 
-.center-button {
+.get--centered {
   text-align: center; }
 
 .label-hint p {
@@ -442,11 +452,11 @@ h4 {
   padding: 0;
   line-height: 1.6; }
 
-.blog p:first-of-type {
+.container--blog .blog--text:first-of-type {
   text-indent: 2rem; }
-.blog p {
+.container--blog .blog--text {
   font-family: 'Lora', serif; }
-.blog h3 {
+.container--blog h3 {
   margin: 3rem 0 3.3rem 0; }
 
 .contents--blog {
@@ -466,6 +476,12 @@ h4 {
     width: 100%; }
 
 @media (min-width: 760px) {
+  .blog--text {
+    transform: translateX(-60px); }
+
+  .blog--figure {
+    transform: translateX(-30px); }
+
   .contents--blog .contents--blog--list {
     margin: 1.5rem 1.5rem;
     display: inline-block; }
@@ -492,11 +508,11 @@ h4 {
   .footer--primary p {
     padding-bottom: 1rem;
     line-height: 1.5; }
-  .footer--primary ul {
+  .footer--primary .nav--secondary {
     margin: 0;
     padding: 0 0 2rem 16px;
     list-style-type: none; }
-  .footer--primary li {
+  .footer--primary .nav--secondary--item {
     padding-bottom: 0.2rem; }
 
 .footer--social {
@@ -513,6 +529,9 @@ h4 {
   .footer--primary {
     padding: 2.5rem 0 3.7rem 0; } }
 @media (min-width: 760px) {
+  .figure--circle {
+    float: right; }
+
   .container p {
     font-size: 1.1rem;
     line-height: 2.2; }
@@ -525,7 +544,7 @@ h4 {
     margin: 24px 16px;
     display: inline-block; }
 
-  .download {
+  .button--primary {
     padding: 16px 22px;
     font-size: 1rem;
     box-shadow: 2px 2px 2px rgba(13, 13, 13, 0.2); }
