@@ -30,7 +30,7 @@
 }
 
 .bg-student-survival-guide {
-	background-image: url(img/ssg-mobile.jpg);
+	background-image: url(../img/ssg-mobile.jpg);
 	transition: background-image 220ms ease-in-out;
 }
 
@@ -88,6 +88,6 @@ h4 {
 			display: inline-block;
 	}
 	.bg-student-survival-guide {
-		background-image: url(img/ssg-desktop.jpg);
+		background-image: url(../img/ssg-desktop.jpg);
 	}
 }

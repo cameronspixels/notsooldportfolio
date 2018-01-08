@@ -6,7 +6,7 @@
 		height: 0; width: 100%;
 		position: fixed; 
 		z-index: 2;
-		background-image: url(img/bg-red.jpg); 
+		background-image: url(../img/bg-red.jpg); 
 		background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;
 		opacity: 0;
 		overflow: hidden;
@@ -48,7 +48,7 @@
 	.handle--close {
 		display: inline-block;
 		position: fixed;
-		background-image: url(img/bg-red.jpg);
+		background-image: url(../img/bg-red.jpg);
 		background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; 
 	color: var(--color-white);
 	}

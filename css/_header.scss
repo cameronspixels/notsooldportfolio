@@ -1,14 +1,14 @@
 .header--primary {
-	display: grid;
-	grid-template-columns: repeat 5(1fr);
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+	display: grid; display: -ms-grid;
+	grid-template-columns: repeat 5(1fr); -ms-grid-columns: repeat 5(1fr);
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr; -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
 	height: 100vh;
 	// background-image: url(img/me.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	.header--primary--content {
-		grid-column-start: 2; grid-row: 3/4;
+		grid-column-start: 2; grid-row: 3/4; -ms-grid-column: 2; -ms-grid-row: 3/4;
 		align-self: center;
 		text-align: left;
 		} 
@@ -58,8 +58,8 @@
 .arrow {
 	padding: 16px;
 	height: 32px;
-	grid-row-start: 4;	
-	grid-column: 1/6;
+	grid-row-start: 4; -ms-grid-row: 4;
+	grid-column: 1/6; -ms-grid-column: 1;
 	justify-self: center;
 	border: none;
 	animation: hovering 10s infinite ease-in-out; 
@@ -123,7 +123,7 @@
 @media (min-width: 760px) {
 	.header--primary {
 		section {
-			grid-column: 2/3; grid-row: 3/4;
+			grid-column: 2/3; grid-row: 3/4; -ms-grid-column: 2; -ms-grid-row: 3;
 			align-self: center;
 		}
 		.button--blog {
@@ -134,6 +134,6 @@
 		}
 	}
 	.arrow {
-		grid-row-start: 5;
+		grid-row-start: 5; -ms-grid-row: 5;
 	}
 }
